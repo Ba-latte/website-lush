@@ -29,6 +29,7 @@ header .gnb{
   font-size: 1.2rem;
 }
 header a{
+  color: var(--Gray90);
   text-decoration: none;
 }
 
@@ -51,4 +52,25 @@ header a{
   justify-content: center;
   align-items: center;
 
+}
+
+
+
+/* --------------- 하단영역 --------------- */
+footer{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+footer .copyright{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .copyright>span{
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--Gray50);
 }
