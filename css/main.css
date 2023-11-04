@@ -31,3 +31,44 @@
   line-height: 130%;
 }
 
+
+
+
+.lushShopInfo{
+  padding-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.lushShopInfo>img{
+  width: 80vmin;
+}
+.lushShopInfo>.contentBox{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.lushShopInfo .title{
+  font-size: 1.3rem;
+}
+.lushShopInfo .desc{
+  font-size: 2rem;
+  letter-spacing: -2px;
+}
+.lushShopInfo .link{
+  display: block;
+  width: 200px;
+  height: 60px;
+  border: 1px solid #000;
+
+  text-align: center;
+  line-height: 65px;
+  text-decoration: none;
+  color: #000;
+}
+.lushShopInfo .link:hover{
+  background-color: var(--Gray100);
+  color: #fff;
+  border: none;
+}
