@@ -31,7 +31,50 @@
   line-height: 130%;
 }
 
-
+.previewLush{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.previewLush > .title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.previewLush > .sub-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.previewLush > .contentBox{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 50px 0;
+}
+.previewLush img{
+  width: 20rem;
+}
+.previewLush .digitalBadge,
+.previewLush .memberGift,
+.previewLush .givingPresent{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.previewLush .title{
+  display: inline-block;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.previewLush .desc{
+  display: inline-block;
+  text-align: center;
+  line-height: 130%;
+}
 
 
 .lushShopInfo{
@@ -72,3 +115,4 @@
   color: #fff;
   border: none;
 }
+
