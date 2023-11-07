@@ -112,7 +112,7 @@
 }
 .lushShopInfo .link:hover{
   background-color: var(--Gray100);
+  border: 1px solid #fff;
   color: #fff;
-  border: none;
 }
 
