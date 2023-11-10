@@ -251,6 +251,11 @@ main > section{
   margin-bottom: 100px;
   padding-top: 100px;
 }
+.productsInfo>.title{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 .productsInfo .category{
   position: relative;
   display: flex;
