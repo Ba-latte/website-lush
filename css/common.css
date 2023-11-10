@@ -7,6 +7,7 @@ header{
   z-index: 100;
 
   max-width: 1920px;
+  margin: 0 auto;
   padding: 1.25rem;
   display: flex;
   justify-content: center;
