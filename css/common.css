@@ -62,6 +62,13 @@ header a{
   text-align: center;
   cursor: pointer;
 }
+/* --------------- 아이템 개별 세팅 --------------- */
+.quickMenu__item:nth-child(1) {
+  background-color: #FAE100;
+}
+.quickMenu__item:nth-child(1) img{
+  width: 60%;
+}
 .qrBox{
   position: absolute;
   left: -220px;
