@@ -367,3 +367,89 @@ main > section{
   transform: scale(1.3);
   background-color: var(--Gray80);
 }
+
+/* ------- 러쉬가 지켜온 가치들 ------- */
+.lushValues{
+  /* margin-bottom: 100px; */
+  padding-top: 100px;
+}
+.lushValues>.title{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.lushValues .rollingBanner{
+  display: flex;
+  overflow: hidden;
+}
+.lushValues .wrapper{
+  display: flex;
+  flex-shrink: 0;
+}
+.lushValues .rollingBanner .rollingBanner__slide{
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.lushValues .iconImg{
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+}
+/* ------- iconImg 개별 세팅 ------- */
+.lushValues .rollingBanner__slide.naked .iconImg{
+  background-image: url(../assets/svg/naked.svg);
+}
+.lushValues .rollingBanner__slide.fighting .iconImg{
+  background-image: url(../assets/svg/fat.svg);
+}
+.lushValues .rollingBanner__slide.fresh .iconImg{
+  background-image: url(../assets/svg/fresh.svg);
+}
+.lushValues .rollingBanner__slide.vegetarian .iconImg{
+  background-image: url(../assets/svg/vegetarian.svg);
+}
+.lushValues .rollingBanner__slide.ethical .iconImg{
+  background-image: url(../assets/svg/ethical.svg);
+}
+.lushValues .rollingBanner__slide.handmade .iconImg{
+  background-image: url(../assets/svg/handmade.svg);
+}
+.lushValues #wrapper01{
+  animation: rolling01 40s linear infinite;
+}
+.lushValues #wrapper02{
+  animation: rolling02 40s linear infinite;
+}
+.lushValues #wrapper03{
+  animation: rolling02 40s linear infinite;
+}
+/* 원본 리스트용 */
+@keyframes rolling01{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  50.01%{
+    transform: translateX(200%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+/* 카피 리스트용 */
+@keyframes rolling02{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
