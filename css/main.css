@@ -164,6 +164,7 @@ main > section{
   bottom: 0;
   z-index: 1;
   background-color: #fff;
+  cursor: auto;
 }
 .lushInfo .swiper-wrapper{
   display: flex;
