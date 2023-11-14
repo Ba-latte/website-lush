@@ -84,6 +84,9 @@ header a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* 잠시 숨겨둠 */
+  display: none;
 }
 .qrBox>button{
   all: unset;

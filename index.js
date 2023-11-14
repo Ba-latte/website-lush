@@ -8,11 +8,67 @@ window.addEventListener("DOMContentLoaded", ()=>{
   // init();
   // render();
 
-  // 스와이퍼 배너
+  // 러쉬 소개 스와이퍼
   const swiper = new Swiper(".lushInfo__banner", {
     slidesPerView: "auto",
     spaceBetween: 80,
   });
+
+  const category1 = document.querySelector(".category1");
+  const category2 = document.querySelector(".category2");
+
+  // 내부 스와이퍼
+  const innerSwiper = new Swiper(`.productsInfo>.category1 .slideBanner`, {
+    slidesPerView: 3,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    on: {
+      // 스와이퍼가 첫번째 슬라이드에 도달하면 이벤트 발생
+      reachBeginning: function(){
+        console.log("첫번째 내부 슬라이드 시작");
+        innerSwiper.autoplay.resume();
+      },
+      // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
+      reachEnd: function(){
+        console.log("첫번째 내부 슬라이드 끝");
+        // 내부 스와이퍼 자동 재생 멈추기
+        innerSwiper.autoplay.stop();
+        category1.style.opacity = "0";
+        category2.style.opacity = "1";
+        innerSwiper2.autoplay.start();
+      }
+    }
+  });
+  innerSwiper.autoplay.start();
+  const innerSwiper2 = new Swiper(".productsInfo>.category2 .slideBanner", {
+    slidesPerView: 3,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    on: {
+      // 스와이퍼가 첫번째 슬라이드에 도달하면 이벤트 발생
+      reachBeginning: function(){
+        console.log("두번째 내부 슬라이드 시작");
+        category2.style.opacity = "0";
+        category1.style.opacity = "1";
+        innerSwiper2.autoplay.stop();
+        innerSwiper.autoplay.start();
+      },
+      // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
+      reachEnd: function(){
+        console.log("두번째 내부 슬라이드 끝");
+        // 내부 스와이퍼 자동 재생 멈추기
+        innerSwiper2.autoplay.stop();
+
+      }
+    }
+  });
+  innerSwiper2.autoplay.stop();
+
 
   // QR코드 미니창 열기/닫기
   const qrBox = document.querySelector(".qrBox");

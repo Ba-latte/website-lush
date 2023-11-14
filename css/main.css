@@ -274,48 +274,62 @@ main > section{
 
 /* ------- 제품 소개 ------- */
 .productsInfo{
+  position: relative;
   margin-bottom: 100px;
   padding-top: 100px;
+  border: 1px solid #000;
 }
 .productsInfo>.title{
   width: 0;
   height: 0;
   overflow: hidden;
 }
-.productsInfo .category{
+.productsInfo .productsInfo__category{
+  margin: 0 0 0 20%;
+  width:80%;
   position: relative;
   display: flex;
-  gap: 4%;
+  transition: opacity .5s;
+  border: 1px solid red;
 }
-.category>figure{
-  width: 30%;
+.productsInfo .category1{
+  opacity: 1;
 }
-.category>.contentBox{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.productsInfo .category2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
 }
-.productsInfo .title{
+.productsInfo__category img{
+  width: 475px;
+  height: 560px;
+}
+.productsInfo .contentBox{
+  width: calc(100% - 475px);
+}
+.productsInfo .contentBox .title{
+  margin-bottom: 30px;
+  padding-left: 30px;
   font-size: 1.3rem;
 }
-.productsInfo .desc{
+.productsInfo .contentBox .desc{
+  padding-left: 30px;
   font-size: 2rem;
   letter-spacing: -2px;
 }
-.productsInfo figure>img{
-  width: 100%;
-}
 .productsInfo .slideBanner{
-  display: flex;
-  gap: 5%;
-  overflow: hidden;
+  margin-top: 50px;
 }
-.productsInfo .slide{
-  position: relative;
+.productsInfo .slideBanner .slide{
+  padding: 30px;
+  box-sizing: border-box;
 }
 .productsInfo .slideBanner img{
-  width: 280px;
+  width: 100%;
+  height: 100%;
+
   filter: brightness(100%);
   border-radius: 50%;
   transition:
@@ -350,22 +364,6 @@ main > section{
 .productsInfo .slideBanner figure:hover p{
   opacity: 1;
   transform: translateY(0);
-}
-.productsInfo .indicator{
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.productsInfo .indicator>.bullet{
-  width: 16px;
-  height: 16px;
-  background-color: var(--Gray20);
-  border-radius: 50%;
-}
-.productsInfo .indicator>.bullet.active{
-  transform: scale(1.3);
-  background-color: var(--Gray80);
 }
 
 /* ------- 러쉬가 지켜온 가치들 ------- */
