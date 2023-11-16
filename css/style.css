@@ -2,7 +2,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @import "./reset.css";
 @import "./common.css";
-@import "./main.css";
+/* @import "./main.css"; */
 
 :root{
     --Gray100: #111111;

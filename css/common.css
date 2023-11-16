@@ -14,8 +14,10 @@ header{
   align-items: center;
   flex-wrap: wrap;
   gap: 0 10rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(5px);
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  /* backdrop-filter: blur(5px); */
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 header > .logo{
@@ -29,7 +31,8 @@ header .gnb{
   font-size: 1.2rem;
 }
 header a{
-  color: var(--Gray90);
+  /* color: var(--Gray90); */
+  color: #fff;
   text-decoration: none;
 }
 
