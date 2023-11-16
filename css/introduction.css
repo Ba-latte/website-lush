@@ -102,13 +102,36 @@ section.contentArea{
   margin-bottom: 100px;
   padding-top: 100px;
 }
-.contentArea__infoTop>.contentBox{
+.contentArea>article{
   padding-left: 20%;
+  padding-bottom: 150px;
 }
-.contentArea .title{
+.contentArea article .title{
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 2rem;
-  text-indent: -20px;
   line-height: 1.4;
+}
+.contentArea__infoTop .contentBox .title{
+  text-indent: -20px;
+}
+.contentArea article .explanation{
+  line-height: 1.4;
+}
+.contentArea figure{
+  width: 704px;
+  height: 560px;
+}
+.contentArea figure>img{
+  width: 100%;
+  object-fit: cover;
+}
+.contentArea__infoMain{
+  display: flex;
+  gap: 100px;
+}
+.contentArea__infoMain .contentBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
