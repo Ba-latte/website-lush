@@ -14,6 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- 본문 바로가기 -->
+    <div id="skip">
+        <a href="#firstContent">본문으로 바로가기</a>
+    </div>
+    <!-- 헤더 영역 -->
     <header>
         <h1 class="logo">
             <a href="./index.html">LUSH</a>
@@ -26,6 +31,7 @@
             </ul>
         </nav>
     </header>
+    <!-- 메인 영역 -->
     <main>
         <!-- 1.배너 -->
         <section class="banner">
@@ -48,7 +54,7 @@
             </div>
         </section>
         <!-- 2.미리보는 러쉬 -->
-        <section class="previewLush">
+        <section id="firstContent" class="previewLush">
             <h3 class="title">미리보는 러쉬</h3>
             <p class="sub-title">러쉬에서 만나는 다채로운 서비스</p>
             <div class="contentBox">
@@ -420,7 +426,7 @@
             </div>
         </section>
     </main>
-    <!-- 하단 영역 -->
+    <!-- 푸터 영역 -->
     <footer>
         <div class="copyright">
             <span>created by Bara</span>

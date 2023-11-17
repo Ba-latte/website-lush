@@ -39,6 +39,31 @@ header.active{
 header.active a{
   color: var(--Gray90);
 }
+/* 본문으로 바로가기 */
+#skip{
+}
+#skip>a{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--Gray80);
+  color: #fff;
+
+  transform: translateY(-50px);
+  transition: transform .5s;
+}
+/* 탭으로 이동시 활성화 */
+#skip>a:focus{
+  transform: translateY(0px);
+}
 
 /* --------------- 퀵 메뉴 --------------- */
 .quickMenu{
