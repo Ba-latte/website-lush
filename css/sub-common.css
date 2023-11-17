@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* 최상단 배너 */
 section{
   max-width: 1920px;
   margin: 0 auto;
@@ -8,7 +9,6 @@ section.container{
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url(../assets/images/introduction/visual_info@2x.jpg) no-repeat center/cover;
 }
 .container::after{
   content: '';
@@ -41,7 +41,7 @@ section.container{
   font-size: 4rem;
 }
 
-/* lnb 메뉴 */
+/* LNB 메뉴 */
 .lnb{
   max-width: 1920px;
   height: 64px;
@@ -77,6 +77,10 @@ section.container{
   color: #18A957;
   font-weight: bold;
 }
+.lnbMenu a:hover{
+  color: #18A957;
+  font-weight: bold;
+}
 .lnbMenu__item a::after{
   content: '';
   width: 100%;
@@ -97,7 +101,16 @@ section.container{
   z-index: 1;
   background-color: #18A957;
 }
+/* 활성화 */
+.lnb.active {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  right: 0;
+}
 
+
+/* 메인 컨텐츠 */
 section.contentArea{
   margin-bottom: 100px;
   padding-top: 100px;
