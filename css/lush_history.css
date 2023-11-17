@@ -1,7 +1,28 @@
 @charset "utf-8";
 @import url(./sub-common.css);
 
-
+/* 최상단 배너 */
 section.container{
   background: url(../assets/images/introduction/lush_history/visual_history@2x.jpg) no-repeat center/cover;
+}
+
+.contentArea>article.contentArea__infoMain {
+  margin: 0 auto;
+  padding: 0;
+  width: 1224px;
+}
+.contentArea__infoMain>figure{
+  width: 704px;
+  height: 704px;
+  flex-shrink: 0;
+}
+.contentArea__infoMain .title {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+.contentArea__infoMain .explanation {
+  margin-top: 48px;
+  word-break: keep-all;
 }
