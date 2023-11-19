@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url(./sub-common.css);
+
+
+/* 최상단 배너 */
+section.container{
+  background: url(../assets/images/shop/visual_shop@2x.jpg) no-repeat fixed center/cover;
+}
+
+/* 매장 정보 섹션 */
+.shopInfo{
+  width: 1400px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+/* 개별 매장 정보 */
+.individualStoreInfo{
+  display: none;
+}
+
+/* 매장 안내 배너 */
+.swiper.shopInfoBanner{
+  position: relative;
+  /* width: 700px; */
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.shopInfoBanner__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.shopInfoBanner__slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.shopInfoBanner__slide figcaption{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.shopInfoBanner__slide figcaption::before{
+  content: '';
+  display: block;
+  width: 32px;
+  height: 12px;
+  background: url(../assets/svg/ico_reply.svg) no-repeat center/cover;
+}
+/* 페이지네이션 */
+.shopInfoBanner .swiper-pagination.shopInfoBanner__pagination{
+  position: relative;
+  top: -18px;
+  bottom: 0;
+}
+/* 불릿 */
+.shopInfoBanner .swiper-pagination-bullet{
+  width: 20px;
+  height: 2px;
+  border-radius: unset;
+}
+.shopInfoBanner .swiper-pagination-bullet-active{
+  background: var(--Gray80);
+}
+
+/* 매장 목록 */
+.accordion{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px dashed green; */
+}
+.accordion .accordion__trigger{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid var(--Gray80);
+  font-size: 16px;
+  text-align: left;
+}
+.accordion>h3:last-of-type::after{
+  content: '';
+  display: block;
+  /* border-bottom: 1px solid #000; */
+}
+#accordion5id{
+  border-bottom: 1px solid var(--Gray80);
+}
+.accordion__icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/svg/ico_arrowB.svg) no-repeat center/cover;
+}
+.accordion__panel{
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+  overflow-y: hidden;
+  /* border-top: 1px solid var(--Gray20); */
+}
+.accordion__panel:last-of-type{
+  border-bottom: 1px solid var(--Gray80);
+}
+.accordion__panel button{
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+/* 활성화 */
+#accordion5id.active{
+  border-bottom: 1px solid transparent;
+}
+.accordion__trigger.active .accordion__title{
+  font-weight: bold;
+}
+.accordion__trigger.active .accordion__icon{
+  /* background-color: red; */
+  fill: red;
+}
