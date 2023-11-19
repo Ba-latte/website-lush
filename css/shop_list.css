@@ -89,13 +89,8 @@ section.container{
   font-size: 16px;
   text-align: left;
 }
-.accordion>h3:last-of-type::after{
-  content: '';
-  display: block;
-  /* border-bottom: 1px solid #000; */
-}
 #accordion5id{
-  border-bottom: 1px solid var(--Gray80);
+  animation: deactive 0.01s 0.3s forwards;
 }
 .accordion__icon{
   display: inline-block;
@@ -109,7 +104,7 @@ section.container{
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 30px;
   overflow-y: hidden;
-  /* border-top: 1px solid var(--Gray20); */
+  border-top: 1px solid var(--Gray20);
 }
 .accordion__panel:last-of-type{
   border-bottom: 1px solid var(--Gray80);
@@ -124,7 +119,7 @@ section.container{
 }
 /* 활성화 */
 #accordion5id.active{
-  border-bottom: 1px solid transparent;
+  animation: active 0.3s forwards;
 }
 .accordion__trigger.active .accordion__title{
   font-weight: bold;
@@ -132,4 +127,20 @@ section.container{
 .accordion__trigger.active .accordion__icon{
   /* background-color: red; */
   fill: red;
+}
+@keyframes deactive {
+  from{
+    border-bottom: 1px solid transparent;
+  }
+  to{
+    border-bottom: 1px solid var(--Gray80);
+  }
+}
+@keyframes active {
+  from{
+    border-bottom: 1px solid var(--Gray80);
+  }
+  to{
+    border-bottom: 1px solid transparent;
+  }
 }
