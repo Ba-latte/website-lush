@@ -58,7 +58,6 @@ section.container{
 /* 페이지네이션 */
 .shopInfoBanner .swiper-pagination.shopInfoBanner__pagination{
   position: relative;
-  top: -18px;
   bottom: 0;
 }
 /* 불릿 */
