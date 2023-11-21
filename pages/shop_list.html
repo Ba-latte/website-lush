@@ -67,10 +67,6 @@
         </ul>
         <div class="swiper-pagination shopInfoBanner__pagination"></div>
       </div>
-      <!-- 매장 정보 -->
-      <article class="individualStoreInfo">
-
-      </article>
       <!-- 매장 목록 -->
       <div id="accordionGroup" class="wrapper accordion">
         <!-- 서울 -->
@@ -80,98 +76,344 @@
             <span class="accordion__icon"></span>
           </button>
         </h3>
-        <ul id="sect1" class="accordion__panel" aria-labelledby="accordion1id">
-          <li>
-            <button type="button">가로수길점</button>
-          </li>
-          <li>
-            <button type="button">강남역점</button>
-          </li>
-          <li>
-            <button type="button">경리단길 스파점</button>
-          </li>
-          <li>
-            <button type="button">경리단길점</button>
-          </li>
-          <li>
-            <button type="button">대학로점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 강남점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 김포공항점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 노원점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 미아점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 본점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 영등포점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 잠실점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 청량리점</button>
-          </li>
-          <li>
-            <button type="button">롯데월드몰점</button>
-          </li>
-          <li>
-            <button type="button">명동점</button>
-          </li>
-          <li>
-            <button type="button">스타필드 코엑스점</button>
-          </li>
-          <li>
-            <button type="button">신세계백화점 강남점</button>
-          </li>
-          <li>
-            <button type="button">신세계백화점 본점</button>
-          </li>
-          <li>
-            <button type="button">압구정 1호점</button>
-          </li>
-          <li>
-            <button type="button">압구정 스파점</button>
-          </li>
-          <li>
-            <button type="button">여의도 IFC몰점</button>
-          </li>
-          <li>
-            <button type="button">이태원역점</button>
-          </li>
-          <li>
-            <button type="button">타임스퀘어점</button>
-          </li>
-          <li>
-            <button type="button">타임스트림점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 디큐브점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 목동점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 미아점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 신촌점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 천호점</button>
-          </li>
-          <li>
-            <button type="button">홍대점</button>
-          </li>
-        </ul>
+        <div id="sect1" class="accordion__panel" aria-labelledby="accordion1id">
+          <!-- 각 지점 탭리스트 -->
+          <div class="seoul__tablist" role="tablist">
+            <button id="seoul__tab1" role="tab" aria-selected="true" aria-controls="tab__panel1" type="button">가로수길점</button>
+            <button id="seoul__tab2" role="tab" aria-selected="false" aria-controls="tab__panel2" type="button">강남역점</button>
+            <button id="seoul__tab3" role="tab" aria-selected="false" aria-controls="tab__panel3" type="button">경리단길 스파점</button>
+            <button id="seoul__tab4" role="tab" aria-selected="false" aria-controls="tab__panel4" type="button">경리단길점</button>
+            <button id="seoul__tab5" role="tab" aria-selected="false" aria-controls="tab__panel5" type="button">대학로점</button>
+            <button id="seoul__tab6" role="tab" aria-selected="false" aria-controls="tab__panel6" type="button">롯데백화점 강남점</button>
+            <button id="seoul__tab7" role="tab" aria-selected="false" aria-controls="tab__panel7" type="button">롯데백화점 김포공항점</button>
+            <button id="seoul__tab8" role="tab" aria-selected="false" aria-controls="tab__panel8" type="button">롯데백화점 노원점</button>
+            <button id="seoul__tab9" role="tab" aria-selected="false" aria-controls="tab__panel9" type="button">롯데백화점 미아점</button>
+            <button id="seoul__tab10" role="tab" aria-selected="false" aria-controls="tab__panel10" type="button">롯데백화점 본점</button>
+            <button id="seoul__tab11" role="tab" aria-selected="false" aria-controls="tab__panel11" type="button">롯데백화점 영등포점</button>
+            <button id="seoul__tab12" role="tab" aria-selected="false" aria-controls="tab__panel12" type="button">롯데백화점 잠실점</button>
+            <button id="seoul__tab13" role="tab" aria-selected="false" aria-controls="tab__panel13" type="button">롯데백화점 청량리점</button>
+            <button id="seoul__tab14" role="tab" aria-selected="false" aria-controls="tab__panel14" type="button">롯데월드몰점</button>
+            <button id="seoul__tab15" role="tab" aria-selected="false" aria-controls="tab__panel15" type="button">명동점</button>
+            <button id="seoul__tab16" role="tab" aria-selected="false" aria-controls="tab__panel16" type="button">스타필드 코엑스점</button>
+            <button id="seoul__tab17" role="tab" aria-selected="false" aria-controls="tab__panel17" type="button">신세계백화점 강남점</button>
+            <button id="seoul__tab18" role="tab" aria-selected="false" aria-controls="tab__panel18" type="button">신세계백화점 본점</button>
+            <button id="seoul__tab19" role="tab" aria-selected="false" aria-controls="tab__panel19" type="button">압구정 1호점</button>
+            <button id="seoul__tab20" role="tab" aria-selected="false" aria-controls="tab__panel20" type="button">압구정 스파점</button>
+            <button id="seoul__tab21" role="tab" aria-selected="false" aria-controls="tab__panel21" type="button">여의도 IFC몰점</button>
+            <button id="seoul__tab22" role="tab" aria-selected="false" aria-controls="tab__panel22" type="button">이태원역점</button>
+            <button id="seoul__tab23" role="tab" aria-selected="false" aria-controls="tab__panel23" type="button">타임스퀘어점</button>
+            <button id="seoul__tab24" role="tab" aria-selected="false" aria-controls="tab__panel24" type="button">타임스트림점</button>
+            <button id="seoul__tab25" role="tab" aria-selected="false" aria-controls="tab__panel25" type="button">현대백화점 디큐브점</button>
+            <button id="seoul__tab26" role="tab" aria-selected="false" aria-controls="tab__panel26" type="button">현대백화점 목동점</button>
+            <button id="seoul__tab27" role="tab" aria-selected="false" aria-controls="tab__panel27" type="button">현대백화점 미아점</button>
+            <button id="seoul__tab28" role="tab" aria-selected="false" aria-controls="tab__panel28" type="button">현대백화점 신촌점</button>
+            <button id="seoul__tab29" role="tab" aria-selected="false" aria-controls="tab__panel29" type="button">현대백화점 천호점</button>
+            <button id="seoul__tab30" role="tab" aria-selected="false" aria-controls="tab__panel30" type="button">홍대점</button>
+          </div>
+          <!-- 각 지점 정보 : 탭 패널 -->
+          <div class="tabPanelArea">
+            <div id="tab__panel1" role="tabpanel" aria-labelledby="seoul__tab1" class="active">
+              <h4 class="title">가로수길점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강남구 가로수길 32 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-544-7510</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/galosugil.jpg" alt="러쉬 가로수길점 매장 사진">
+            </div>
+            <div id="tab__panel2" role="tabpanel" aria-labelledby="seoul__tab2">
+              <h4 class="title">강남역점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 서초구 강남대로 433</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-3482-1212</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/gangnam.jpg" alt="러쉬 강남역점 매장 사진">
+            </div>
+            <div id="tab__panel3" role="tabpanel" aria-labelledby="seoul__tab3">
+              <h4 class="title">경리단길 스파점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 용산구 회나무로 42길 10 2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-790-7561</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/gyeonglidan_spa.jpg" alt="러쉬 경리단길 스파점 매장 사진">
+            </div>
+            <div id="tab__panel4" role="tabpanel" aria-labelledby="seoul__tab4">
+              <h4 class="title">경리단길점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 용산구 회나무로 42길 10 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-790-7560</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/gyeonglidan.jpg" alt="러쉬 경리단길점 매장 사진">
+            </div>
+            <div id="tab__panel5" role="tabpanel" aria-labelledby="seoul__tab5">
+              <h4 class="title">대학로점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 종로구 대명길 27 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-742-7510</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/daehaglo.jpg" alt="러쉬 대학로점 매장 사진">
+            </div>
+            <div id="tab__panel6" role="tabpanel" aria-labelledby="seoul__tab6">
+              <h4 class="title">롯데백화점 강남점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강남구 도곡로 401 롯데백화점 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-531-2155</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_gangnam.jpg" alt="러쉬 롯데백화점 강남점 매장 사진">
+            </div>
+            <div id="tab__panel7" role="tabpanel" aria-labelledby="seoul__tab7">
+              <h4 class="title">롯데백화점 김포공항점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강서구 하늘길 38 롯데백화점 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-6116-3544</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_gimpo.jpg" alt="러쉬 롯데백화점 김포공항점 매장 사진">
+            </div>
+            <div id="tab__panel8" role="tabpanel" aria-labelledby="seoul__tab8">
+              <h4 class="title">롯데백화점 노원점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 노원구 동일로 1414 롯데백화점 2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-950-2763</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_nowon.jpg" alt="러쉬 롯데백화점 노원점 매장 사진">
+            </div>
+            <div id="tab__panel9" role="tabpanel" aria-labelledby="seoul__tab9">
+              <h4 class="title">롯데백화점 미아점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강북구 도봉로 62 롯데백화점 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-944-2149</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_mia.jpg" alt="러쉬 롯데백화점 미아점 매장 사진">
+            </div>
+            <div id="tab__panel10" role="tabpanel" aria-labelledby="seoul__tab10">
+              <h4 class="title">롯데백화점 본점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 중구 남대문로 67 영플라자 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-772-3866</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_head.jpg" alt="러쉬 롯데백화점 본점 매장 사진">
+            </div>
+            <div id="tab__panel11" role="tabpanel" aria-labelledby="seoul__tab11">
+              <h4 class="title">롯데백화점 영등포점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 영등포구 경인로 846 롯데백화점 3층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2164-5181</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_yeongdeungpo.jpg" alt="러쉬 롯데백화점 영등포점 매장 사진">
+            </div>
+            <div id="tab__panel12" role="tabpanel" aria-labelledby="seoul__tab12">
+              <h4 class="title">롯데백화점 잠실점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 송파구 잠실동 올림픽로 240 롯데백화점 2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2143-7924</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_jamsil.jpg" alt="러쉬 롯데백화점 잠실점 매장 사진">
+            </div>
+            <div id="tab__panel13" role="tabpanel" aria-labelledby="seoul__tab13">
+              <h4 class="title">롯데백화점 청량리점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 동대문구 왕산로 214 롯데백화점 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-3707-1033</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_cheonglyangli.jpg" alt="러쉬 롯데백화점 청량리점 매장 사진">
+            </div>
+            <div id="tab__panel14" role="tabpanel" aria-labelledby="seoul__tab14">
+              <h4 class="title">롯데월드몰점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 송파구 올림픽로 300 롯데월드몰 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-3213-4748</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/lotte_world.jpg" alt="러쉬 롯데월드몰점 매장 사진">
+            </div>
+            <div id="tab__panel15" role="tabpanel" aria-labelledby="seoul__tab15">
+              <h4 class="title">명동점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 중구 명동8가길 6</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-753-6003</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/myeongdong.jpg" alt="러쉬 명동점 매장 사진">
+            </div>
+            <div id="tab__panel16" role="tabpanel" aria-labelledby="seoul__tab16">
+              <h4 class="title">스타필드 코엑스점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강남구 영동대로 513 스타필드 코엑스몰 B1층 B103호</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-6002-5310</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/coex.jpg" alt="러쉬 스타필드 코엑스점 매장 사진">
+            </div>
+            <div id="tab__panel17" role="tabpanel" aria-labelledby="seoul__tab17">
+              <h4 class="title">신세계백화점 강남점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 서초구 신반포로 176 신세계백화점 지하1층 파미에스트리트</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-3479-1424</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/sinsegye_gangnam.jpg" alt="러쉬 신세계백화점 강남점 매장 사진">
+            </div>
+            <div id="tab__panel18" role="tabpanel" aria-labelledby="seoul__tab18">
+              <h4 class="title">신세계백화점 본점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 중구 소공로 63 신세계백화점 신관 7층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-310-5106</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/sinsegye_head.jpg" alt="러쉬 신세계백화점 본점 매장 사진">
+            </div>
+            <div id="tab__panel19" role="tabpanel" aria-labelledby="seoul__tab19">
+              <h4 class="title">압구정 1호점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강남구 언주로 868 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-549-5874</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/abgujeong_one.jpg" alt="러쉬 압구정 1호점 매장 사진">
+            </div>
+            <div id="tab__panel20" role="tabpanel" aria-labelledby="seoul__tab20">
+              <h4 class="title">압구정 스파점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 강남구 언주로 868 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-549-5872</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/abgujeong_spa.jpg" alt="러쉬 압구정 스파점 매장 사진">
+            </div>
+            <div id="tab__panel21" role="tabpanel" aria-labelledby="seoul__tab21">
+              <h4 class="title">여의도 IFC몰점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 영등포구 국제금융로 10 IFC몰 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-6137-5390</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/ifc.jpg" alt="러쉬 여의도 IFC몰점 매장 사진">
+            </div>
+            <div id="tab__panel22" role="tabpanel" aria-labelledby="seoul__tab22">
+              <h4 class="title">이태원역점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 용산구 이태원로 179</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-797-7510</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/itaewon.jpg" alt="러쉬 이태원역점 매장 사진">
+            </div>
+            <div id="tab__panel23" role="tabpanel" aria-labelledby="seoul__tab23">
+              <h4 class="title">타임스퀘어점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 영등포구 영중로 15 타임스퀘어 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2635-7510</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/times_square.jpg" alt="러쉬 타임스퀘어점 매장 사진">
+            </div>
+            <div id="tab__panel24" role="tabpanel" aria-labelledby="seoul__tab24">
+              <h4 class="title">타임스트림점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 관악구 신림로 330 타임스트림 지하1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-881-8059</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/time_stream.jpg" alt="러쉬 타임스트림점 매장 사진">
+            </div>
+            <div id="tab__panel25" role="tabpanel" aria-labelledby="seoul__tab25">
+              <h4 class="title">현대백화점 디큐브점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 구로구 경인로 662 디큐브시티 지하2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2210-9762</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hy_dcube.jpg" alt="러쉬 현대백화점 디큐브점 매장 사진">
+            </div>
+            <div id="tab__panel26" role="tabpanel" aria-labelledby="seoul__tab26">
+              <h4 class="title">현대백화점 목동점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 양천구 목동동로 257 현대백화점 지하2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2163-2196</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hy_mogdong.jpg" alt="러쉬 현대백화점 목동점 매장 사진">
+            </div>
+            <div id="tab__panel27" role="tabpanel" aria-labelledby="seoul__tab27">
+              <h4 class="title">현대백화점 미아점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 성북구 동소문로 315 현대백화점 7층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2117-1783</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hy_mia.jpg" alt="러쉬 현대백화점 미아점 매장 사진">
+            </div>
+            <div id="tab__panel28" role="tabpanel" aria-labelledby="seoul__tab28">
+              <h4 class="title">현대백화점 신촌점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 서대문구 신촌로 83 현대백화점 지하2층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-324-5536</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hy_sinchon.jpg" alt="러쉬 현대백화점 신촌점 매장 사진">
+            </div>
+            <div id="tab__panel29" role="tabpanel" aria-labelledby="seoul__tab29">
+              <h4 class="title">현대백화점 천호점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울시 강동구 천호대로 1005 현대백화점 천호점 지하1층 러쉬</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-2225-8935</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hy_chunho.jpg" alt="러쉬 현대백화점 천호점 매장 사진">
+            </div>
+            <div id="tab__panel30" role="tabpanel" aria-labelledby="seoul__tab30">
+              <h4 class="title">홍대점</h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd>서울특별시 마포구 잔다리로6길 39 1층</dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd>02-553-4646</dd>
+              </dl>
+              <img src="../assets/images/shop/list/seoul/hongdae.jpg" alt="러쉬 홍대점 매장 사진">
+            </div>
+          </div>
+        </div>
         <!-- 경기 -->
         <h3>
           <button type="button" id="accordion2id" aria-expanded="false" class="accordion__trigger" aria-controls="sect2">
@@ -179,65 +421,223 @@
             <span class="accordion__icon"></span>
           </button>
         </h3>
-        <ul id="sect2" class="accordion__panel" aria-labelledby="accordion2id">
-          <li>
-            <button type="button">롯데몰 수지점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 구리점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 동탄</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 분당점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 수원점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 인천터미널점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 일산점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 중동점</button>
-          </li>
-          <li>
-            <button type="button">롯데백화점 평촌점</button>
-          </li>
-          <li>
-            <button type="button">스타필드 고양점</button>
-          </li>
-          <li>
-            <button type="button">스타필드 안성점</button>
-          </li>
-          <li>
-            <button type="button">스타필드 하남점</button>
-          </li>
-          <li>
-            <button type="button">신세계백화점 의정부</button>
-          </li>
-          <li>
-            <button type="button">신세계백화점 경기점</button>
-          </li>
-          <li>
-            <button type="button">현대아울렛 송도점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 중동점</button>
-          </li>
-          <li>
-            <button type="button">현대백화점 판교점</button>
-          </li>
-          <li>
-            <button type="button">AK몰 분당점</button>
-          </li>
-          <li>
-            <button type="button">AK몰 수원점</button>
-          </li>
-        </ul>
+        <div id="sect2" class="accordion__panel" aria-labelledby="accordion2id">
+          <!-- 각 지점 탭리스트 -->
+          <div class="gyeonggi__tablist" role="tablist">
+            <button id="gyeonggi__tab1" role="tab" aria-selected="true" aria-controls="gyeonggi__tabPanel1" type="button">롯데몰 수지점</button>
+            <button id="gyeonggi__tab2" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel2" type="button">롯데백화점 구리점</button>
+            <button id="gyeonggi__tab3" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel3" type="button">롯데백화점 동탄</button>
+            <button id="gyeonggi__tab4" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel4" type="button">롯데백화점 분당점</button>
+            <button id="gyeonggi__tab5" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel5" type="button">롯데백화점 수원점</button>
+            <button id="gyeonggi__tab6" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel6" type="button">롯데백화점 인천터미널점</button>
+            <button id="gyeonggi__tab7" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel7" type="button">롯데백화점 일산점</button>
+            <button id="gyeonggi__tab8" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel8" type="button">롯데백화점 중동점</button>
+            <button id="gyeonggi__tab9" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel9" type="button">롯데백화점 평촌점</button>
+            <button id="gyeonggi__tab10" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel10" type="button">스타필드 고양점</button>
+            <button id="gyeonggi__tab11" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel11" type="button">스타필드 안성점</button>
+            <button id="gyeonggi__tab12" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel12" type="button">스타필드 하남점</button>
+            <button id="gyeonggi__tab13" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel13" type="button">신세계백화점 의정부</button>
+            <button id="gyeonggi__tab14" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel14" type="button">신세계백화점 경기점</button>
+            <button id="gyeonggi__tab15" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel15" type="button">현대아울렛 송도점</button>
+            <button id="gyeonggi__tab16" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel16" type="button">현대백화점 중동점</button>
+            <button id="gyeonggi__tab17" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel17" type="button">현대백화점 판교점</button>
+            <button id="gyeonggi__tab18" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel18" type="button">AK몰 분당점</button>
+            <button id="gyeonggi__tab19" role="tab" aria-selected="false" aria-controls="gyeonggi__tabPanel19" type="button">AK몰 수원점</button>
+          </div>
+          <!-- 각 지점 정보 : 탭 패널 -->
+          <div class="tabPanelArea">
+            <div id="gyeonggi__tabPanel1" role="tabpanel" aria-labelledby="gyeonggi__tab1">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel2" role="tabpanel" aria-labelledby="gyeonggi__tab2">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel3" role="tabpanel" aria-labelledby="gyeonggi__tab3">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel4" role="tabpanel" aria-labelledby="gyeonggi__tab4">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel5" role="tabpanel" aria-labelledby="gyeonggi__tab5">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel6" role="tabpanel" aria-labelledby="gyeonggi__tab6">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel7" role="tabpanel" aria-labelledby="gyeonggi__tab7">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel8" role="tabpanel" aria-labelledby="gyeonggi__tab8">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel9" role="tabpanel" aria-labelledby="gyeonggi__tab9">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel10" role="tabpanel" aria-labelledby="gyeonggi__tab10">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel11" role="tabpanel" aria-labelledby="gyeonggi__tab11">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel12" role="tabpanel" aria-labelledby="gyeonggi__tab12">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel13" role="tabpanel" aria-labelledby="gyeonggi__tab13">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel14" role="tabpanel" aria-labelledby="14">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel15" role="tabpanel" aria-labelledby="gyeonggi__tab15">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel16" role="tabpanel" aria-labelledby="gyeonggi__tab16">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel17" role="tabpanel" aria-labelledby="gyeonggi__tab17">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel18" role="tabpanel" aria-labelledby="gyeonggi__tab18">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+            <div id="gyeonggi__tabPanel19" role="tabpanel" aria-labelledby="gyeonggi__tab19">
+              <h4 class="title"></h4>
+              <dl class="contactInformation">
+                <dt class="adderss">주소</dt>
+                <dd></dd>
+                <dt class="phoneNumber">연락처</dt>
+                <dd></dd>
+              </dl>
+              <img src="../assets/images/shop/list/gyeonggi/" alt="">
+            </div>
+          </div>
+        </div>
         <!-- 경상 -->
         <h3>
           <button type="button" id="accordion3id" aria-expanded="false" class="accordion__trigger" aria-controls="sect3">

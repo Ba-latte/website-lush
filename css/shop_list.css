@@ -9,10 +9,12 @@ section.container{
 
 /* 매장 정보 섹션 */
 .shopInfo{
-  width: 1400px;
+  position: relative;
+  width: 1200px;
   margin: 200px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 10%;
 }
 /* 개별 매장 정보 */
@@ -24,7 +26,7 @@ section.container{
 .swiper.shopInfoBanner{
   position: relative;
   /* width: 700px; */
-  width: 50%;
+  width: 55%;
   margin-left: 0;
   margin-right: 0;
 }
@@ -71,10 +73,9 @@ section.container{
 
 /* 매장 목록 */
 .accordion{
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  /* border: 1px dashed green; */
 }
 .accordion .accordion__trigger{
   width: 100%;
@@ -100,24 +101,27 @@ section.container{
 }
 .accordion__panel{
   padding: 20px 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 30px;
   overflow-y: hidden;
   border-top: 1px solid var(--Gray20);
 }
 .accordion__panel:last-of-type{
   border-bottom: 1px solid var(--Gray80);
 }
+.accordion__panel div[role="tablist"]{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+}
 .accordion__panel button{
   padding: 0;
   background-color: #fff;
   border: none;
+  text-align: left;
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
 }
-/* 활성화 */
+/* 아코디언 UI 활성화 */
 #accordion5id.active{
   animation: active 0.3s forwards;
 }
@@ -143,4 +147,45 @@ section.container{
   to{
     border-bottom: 1px solid transparent;
   }
+}
+
+/* 탭 패널 */
+div[role="tabpanel"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+  border-top: 1px solid #000;
+  /* 비활성화 패널들 숨겨두기 */
+  display: none;
+}
+div[role="tabpanel"]>.title{
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+div[role="tabpanel"]>.contactInformation{
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+div[role="tabpanel"] dt{
+  margin-bottom: 10px;
+}
+div[role="tabpanel"] dd{
+  margin-bottom: 30px;
+}
+div[role="tabpanel"]>img{
+  width: 100%;
+}
+
+/* 탭 UI 활성화 */
+button[aria-selected="true"]{
+  font-weight: bold;
+  color: #18A957 ;
+}
+div[role="tabpanel"].active{
+  display: block;
 }
