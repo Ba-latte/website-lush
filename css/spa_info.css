@@ -5,3 +5,60 @@
 section.container{
   background: url(../assets/images/spa/visual_spa@2x.jpg) no-repeat fixed center/cover;
 }
+
+
+/* 콘텐츠 영역 */
+section.contentArea{
+  margin-bottom: 200px;
+  width: 1400px;
+}
+.contentArea>.contentArea__intro{
+  padding: 0;
+}
+.contentArea__intro .wrapper{
+  width: 85%;
+  margin: 0 auto 100px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.contentArea__intro .videoBox{
+  width: 85%;
+  height: 688px;
+  margin: 0 auto;
+  background-color: #363636;
+}
+.contentArea__intro .textBox{
+  width: 60%;
+}
+.contentArea__intro .explanation:not(:first-child){
+  padding: 5px 0;
+}
+.linkBox{
+  width: 30%;
+}
+.linkBox .link{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.linkBox .link::after{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(-10px);
+  background: url(../assets/svg/ico_link_move.svg) no-repeat center/cover;
+  transition: transform .5s;
+}
+.linkBox .link:hover::after{
+  transform: translateY(-50%) translateX(0);
+}
