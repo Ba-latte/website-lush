@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스파 안내</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/spa_info.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 본문 바로가기 -->
+  <div id="skip">
+    <a href="#firstContent">본문으로 바로가기</a>
+  </div>
+  <!-- 헤더 영역 -->
+  <header>
+    <h1 class="logo">
+        <a href="../index.html">LUSH</a>
+    </h1>
+    <nav>
+        <ul class="gnb">
+            <li><a href="./lush_info.html">소개</a></li>
+            <li><a href="./campaign_donation.html">캠페인</a></li>
+            <li><a href="./spa_info.html">스파</a></li>
+            <li><a href="./shop_list.html">매장안내</a></li>
+        </ul>
+    </nav>
+  </header>
+  <!-- 메인 영역 -->
+  <main>
+    <!-- 1.최상단 배너 -->
+    <section id="firstContent" class="container">
+      <div class="contentBox">
+        <h2 class="title">스파</h2>
+        <p class="subTitle">
+          아름다운 자연에서 영감 받은
+          <br>
+          영국 전통 스파
+        </p>
+        <p class="desc">
+          손끝에서 아름다워지는 피부
+        </p>
+      </div>
+    </section>
+    <!-- 2.내부 내비게이션 -->
+    <nav class="lnb">
+      <ul class="lnbMenu">
+        <li class="lnbMenu__item active">
+          <a href="./spa_info.html">소개</a>
+        </li>
+        <li class="lnbMenu__item">
+          <a href="">이용방법</a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <!-- 하단 영역 -->
+  <footer>
+    <div class="copyright">
+      <span>created by Bara</span>
+      <span>This site is a portfolio site created by benchmarking Rush.</span>
+    </div>
+  </footer>
+  <!-- 퀵 메뉴 -->
+  <ul class="quickMenu">
+    <li class="quickMenu__item">
+      <button class="goKakao">
+        <img src="../assets/images/main/ico_kakao_quick.png" alt="카카오 채널 새창열기">
+      </button>
+    </li>
+    <li class="quickMenu__item">
+      <button class="goStore">
+        <img src="../assets/svg/store.svg" alt="러쉬 스토어 QR코드 안내창 열기">
+      </button>
+      <div class="qrBox">
+        <button>
+          <img src="../assets/svg/ico_close_gray.svg" alt="qr코드 안내창 닫기">
+        </button>
+        <h5 class="title">러쉬 스토어</h5>
+        <img src="../assets/images/main/qr_store@2x.png" alt="러쉬 스토어 바로가기 QR코드">
+        <p class="desc">
+          QR 코드를 찍고
+          <br>
+          모바일에서 편리하게
+          <br>
+          쇼핑해 보세요!
+        </p>
+      </div>
+    </li>
+    <li class="quickMenu__item">
+      <button>
+        <img src="../assets/svg/arrowT.svg" alt="위로 가기">
+      </button>
+    </li>
+  </ul>
+</body>
+</html>
