@@ -3,12 +3,16 @@
 $(()=>{
   console.log("서브페이지 JS파일 로딩 완료");
   
-  var swiper = new Swiper(".shopInfoBanner", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+  // 매장 안내 페이지의 스와이퍼
+  if($(".shopInfoBanner").length){
+    console.log('스와이퍼 배너 있음');
+    var swiper = new Swiper(".shopInfoBanner", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  }
 
   // 모든 패널 슬라이드 업하여 숨기기
   const accordion__panel = $(".accordion__panel");
@@ -41,4 +45,13 @@ $(()=>{
     let tab__panelID = $(this).attr("aria-controls");
     $(`#${tab__panelID}`).addClass("active");
   });
+
+  // "구매하기" 버튼 클릭시 새 창으로 모바일 버전 사이트 열기
+  const buy__button = $("div[role='tabpanel'] .link");
+  buy__button.click(function(){
+    window.open($(this).attr("href"), '_blank', "noreferrer, width=430, height=800");
+    return false;
+  });
+
+
 });
