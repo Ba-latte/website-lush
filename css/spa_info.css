@@ -118,15 +118,17 @@ div[role="tabpanel"]{
   display: none;
 }
 div[role="tabpanel"]>.title{
-  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 0;
   font-size: 32px;
   font-weight: bold;
 }
 div[role="tabpanel"]>.contactInformation{
-  margin-top: 30px;
+  padding-top: 50px;
 }
 div[role="tabpanel"] dt{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 div[role="tabpanel"] dd{
   margin-bottom: 30px;
