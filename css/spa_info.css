@@ -10,8 +10,8 @@ section.container{
 /* 콘텐츠 영역 */
 section.contentArea{
   margin-bottom: 200px;
-  /* width: 1400px; */
-  width: 1200px;
+  width: 1400px;
+  /* width: 1200px; */
 }
 .contentArea>.contentArea__intro{
   padding: 0;
@@ -74,7 +74,7 @@ section.contentArea{
 }
 .treatmentTab .wrapper{
   width: 85%;
-  margin: 0 auto 100px;
+  margin: 0 auto 200px;
   padding-top: 100px;
   display: flex;
   flex-direction: row-reverse;
@@ -160,4 +160,65 @@ button[aria-selected="true"]{
 }
 div[role="tabpanel"].active{
   display: block;
+}
+
+/* 스파 이용방법 안내 배너 */
+.contentArea .howToUse{
+  position: relative;
+  width: 1400px;
+  height: 350px;
+  margin: 0 auto 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: url(../assets/images/spa/spa_mo@3x.jpg) no-repeat center/cover;
+}
+.howToUse::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.howToUse > img{
+  position: absolute;
+  left: 200px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+}
+.howToUse > .contentBox{
+  position: absolute;
+  left: calc(200px + 150px);
+  z-index: 1;
+  padding: 0 0 0 50px;
+}
+.howToUse .title{
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.howToUse .desc{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+.howToUse .link{
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  
+  text-align: center;
+  line-height: 65px;
+  text-decoration: none;
+  color: #fff;
+}
+.howToUse .link:hover{
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
 }
