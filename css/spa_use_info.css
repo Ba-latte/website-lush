@@ -85,3 +85,48 @@ section.spaUseInfo{
   }
 }
 
+/* 모바일 사이트 안내 배너 */
+.goMobile{
+  position: relative;
+  max-width: none;
+  width: 100vw;
+  height: 350px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: url(../assets/images/spa/spa_mo@3x.jpg) no-repeat center/cover;
+}
+.goMobile::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.goMobile .title{
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.goMobile > .contentBox{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.goMobile img{
+  width: 150px;
+  height: 150px;
+}
+.goMobile .desc{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+}
