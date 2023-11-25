@@ -136,21 +136,21 @@ section.spaUseInfo{
 }
 
 /* 구매 방법 */
-.howToBuy{
+.step{
   margin-bottom: 100px;
   text-align: center;
 }
-.howToBuy .title{
+.step .title{
   font-weight: bold;
   font-size: 2rem;
 }
-.howToBuy .explanation{
+.step .explanation{
   line-height: 1.4;
 }
-.howToBuy img{
+.step img{
   width: 250px;
 }
-.howToBuy .sequenceBox{
+.step .sequenceBox{
   width: 1200px;
   margin: 50px auto 0;
   padding: 50px;
@@ -162,7 +162,7 @@ section.spaUseInfo{
 .sequenceBox>li{
   position: relative;
 }
-.howToBuy .sequenceBox>li:not(:last-child)::after{
+.step .sequenceBox>li:not(:last-child)::after{
   content: '';
   position: absolute;
   top: 50%;
