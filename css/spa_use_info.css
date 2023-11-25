@@ -58,6 +58,12 @@ section.spaUseInfo{
 .accordion__panel:last-of-type{
   border-bottom: 1px solid var(--Gray80);
 }
+.accordion__panel em{
+  color: #18A957;
+}
+.accordion__panel .textBox p{
+  line-height: 1.5;
+}
 /* 아코디언 활성화 */
 .accordion h3:last-of-type .accordion__trigger.active{
   animation: active 0.3s forwards;
@@ -78,3 +84,4 @@ section.spaUseInfo{
     border-bottom: 1px solid transparent;
   }
 }
+
