@@ -23,6 +23,11 @@ section.spaUseInfo{
   text-align: center;
   font-size: 2rem;
 }
+.spaUseInfo .explanation{
+  padding: 30px 0 50px;
+  text-align: center;
+  line-height: 1.4;
+}
 .accordion{
   display: flex;
   flex-direction: column;
@@ -145,6 +150,7 @@ section.spaUseInfo{
   font-size: 2rem;
 }
 .step .explanation{
+  padding: 30px 0 50px;
   line-height: 1.4;
 }
 .step img{
@@ -152,7 +158,7 @@ section.spaUseInfo{
 }
 .step .sequenceBox{
   width: 1200px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -172,4 +178,40 @@ section.spaUseInfo{
   width: 24px;
   height: 24px;
   background-color: red;
+}
+
+/* 주의사항 */
+section.precautions{
+  width: 800px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.precautions__title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.precautions .explanation{
+  padding: 30px 0 50px;
+  text-align: center;
+  line-height: 1.4;
+}
+.precautions .classification{
+  padding: 50px 0 0 50px;
+}
+.precautions ul{
+  list-style: inside;
+}
+.precautions .textBox>p{
+  margin-bottom: 20px;
+}
+.precautions li{
+  margin-bottom: 10px;
+}
+.precautions .classification>dt{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.precautions .classification>dd{
+  margin-bottom: 30px;
 }
