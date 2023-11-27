@@ -14,15 +14,28 @@ $(()=>{
     });
   }
 
-  // 모든 패널 슬라이드 업하여 숨기기
-  const accordion__panel = $(".accordion__panel");
-  accordion__panel.hide();
 
-  $(".accordion__trigger").click(function(){
+  const accordion__panel = $(".accordion__panel");
+  // 처음부터 펼쳐져있는(.spread) 아코디언의 경우
+  accordion__panel.hide();
+  if($(".spread").length){
+    // aria-expanded속성이 true인 패널 펼쳐놓기
+    console.log("스프레드 아코디언 있음!");
+    $(".spread").find(".accordion__panel").eq(0).show();
+  }
+
+  
+  const accordion__trigger = $(".accordion__trigger");
+  accordion__trigger.click(function(){
+    // 모든 아코디언트리거의 aria-expanded속성 false로 초기화
+    accordion__trigger.attr("aria-expanded", "false");
+
     // 클릭한 아코디언트리거에 active 클래스 토글
     $(this).toggleClass("active");
+    // 클릭한 아코디언트리거의 aria-expanded속성 true로 변경
+    $(this).attr("aria-expanded", "true");
     // 나머지 아코디언트리거에서 active 클래스 제거
-    $(".accordion__trigger").not($(this)).removeClass("active");
+    accordion__trigger.not($(this)).removeClass("active");
 
     const controlId = $(this).attr("aria-controls");
     // aria-controls와 같은 id를 가진 패널 슬라이드 토글 하기
