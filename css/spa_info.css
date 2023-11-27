@@ -86,20 +86,21 @@ section.contentArea{
   width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 button[role="tab"]{
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: #fff;
   border: none;
   border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
   text-align: left;
   font-size: 16px;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 
   cursor: pointer;
+}
+button[role="tab"]:last-child{
+  border-bottom: 1px solid #000;
 }
 /* 탭 패널 */
 .tabPanelArea{
@@ -221,4 +222,124 @@ div[role="tabpanel"].active{
   background-color: #fff;
   border: 1px solid #fff;
   color: #000;
+}
+
+/* 스파 매장 안내 */
+article.branchInfo{
+  width: 85%;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.branchInfo__title{
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+.branchInfo>figure figcaption{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.branchInfo>figure figcaption::before{
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 12px;
+  background: url(../assets/svg/ico_reply.svg) no-repeat center/cover;
+}
+.accordion{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.accordion .accordion__trigger{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid var(--Gray80);
+
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.accordion .accordion__trigger::after{
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: red;
+}
+.accordion h3:last-of-type .accordion__trigger{
+  animation: deactive 0.01s 0.5s forwards;
+  border-bottom: 1px solid var(--Gray80);
+}
+.accordion__panel{
+  padding: 20px 10px;
+  overflow-y: hidden;
+  border-top: 1px solid var(--Gray20);
+}
+.accordion__panel:last-of-type{
+  border-bottom: 1px solid var(--Gray80);
+}
+.contactInformation>dt{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contactInformation>dd{
+  margin-bottom: 30px;
+}
+.accordion__panel .link {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 65px;
+  text-decoration: none;
+  color: #000;
+}
+.accordion__panel .link:hover {
+  background-color: var(--Gray100);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* 아코디언 활성화 */
+.branchInfo .accordion__trigger.active{
+  font-weight: bold;
+}
+.accordion h3:last-of-type .accordion__trigger.active{
+  animation: active 0.3s forwards;
+}
+@keyframes deactive {
+  from{
+    border-bottom: 1px solid transparent;
+  }
+  to{
+    border-bottom: 1px solid var(--Gray80);
+  }
+}
+@keyframes active {
+  from{
+    border-bottom: 1px solid var(--Gray80);
+  }
+  to{
+    border-bottom: 1px solid transparent;
+  }
+}
+.branchInfo>figure:not(.active){
+  display: none;
 }
