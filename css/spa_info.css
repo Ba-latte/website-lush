@@ -25,9 +25,14 @@ section.contentArea{
 }
 .contentArea__intro .videoBox{
   width: 85%;
-  height: 688px;
+  aspect-ratio: 16/9;
   margin: 0 auto;
-  background-color: #363636;
+  /* background-color: #363636; */
+}
+.contentArea__intro iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 .contentArea__intro .textBox{
   width: 60%;
