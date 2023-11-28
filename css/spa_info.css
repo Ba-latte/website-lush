@@ -271,19 +271,15 @@ article.branchInfo{
   font-size: 16px;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
-.accordion .accordion__trigger::after{
-  content: '';
+.accordion .iconAccordion{
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background-color: red;
+  right: 6px;
 }
 .accordion h3:last-of-type .accordion__trigger{
-  animation: deactive 0.01s 0.5s forwards;
-  border-bottom: 1px solid var(--Gray80);
+  animation: deactive 0.01s 0.3s forwards;
+  /* border-bottom: 1px solid var(--Gray80); */
 }
 .accordion__panel{
   padding: 20px 10px;
@@ -323,6 +319,10 @@ article.branchInfo{
 }
 .accordion h3:last-of-type .accordion__trigger.active{
   animation: active 0.3s forwards;
+}
+.accordion__trigger.active>.iconAccordion{
+  transform: rotate(180deg);
+  fill: var(--Gray20);
 }
 @keyframes deactive {
   from{
