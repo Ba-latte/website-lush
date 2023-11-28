@@ -22,26 +22,39 @@ $(()=>{
     // aria-expanded속성이 true인 패널 펼쳐놓기
     console.log("스프레드 아코디언 있음!");
     $(".spread").find(".accordion__panel").eq(0).show();
+    // $("#branchInfo__accordionGroup").find(".accordion__trigger").eq(1).hasClass("active")
   }
-
+  
   
   const accordion__trigger = $(".accordion__trigger");
   accordion__trigger.click(function(){
     // 모든 아코디언트리거의 aria-expanded속성 false로 초기화
     accordion__trigger.attr("aria-expanded", "false");
-
+    
     // 클릭한 아코디언트리거에 active 클래스 토글
     $(this).toggleClass("active");
     // 클릭한 아코디언트리거의 aria-expanded속성 true로 변경
     $(this).attr("aria-expanded", "true");
     // 나머지 아코디언트리거에서 active 클래스 제거
     accordion__trigger.not($(this)).removeClass("active");
-
+    
     const controlId = $(this).attr("aria-controls");
     // aria-controls와 같은 id를 가진 패널 슬라이드 토글 하기
     $(`#${controlId}`).slideToggle(300);
     // 자기 자신 제외한 나머지 패널 모두 슬라이드 업하기
     accordion__panel.not(`#${controlId}`).slideUp(300);
+
+    // 스파 매장 안내 아코디언 UI의 트리거 클릭시 이미지 변경
+    console.log($("#branchInfo__accordionGroup").find(".accordion__trigger").eq(1).hasClass("active"));
+    if($("#branchInfo__accordionGroup").find(".accordion__trigger").eq(1).hasClass("active")){
+      console.log("스파 매장 안내 아코디언 두번째 트리거 클릭함");
+      $(".branchInfo>figure>img").attr("src", "../assets/images/spa/spa_kyung@3x.jpg");
+      $(".branchInfo>figure>figcaption").text("가로수길점 매장 내부");
+    }
+    else{
+      $(".branchInfo>figure>img").attr("src", "../assets/images/spa/spa_apgu@3x.jpg");
+      $(".branchInfo>figure>figcaption").text("압구정점 매장 내부");
+    }
   });
 
   // 탭버튼 클릭시 탭 패널에 active 클래스 추가하여 보이기
