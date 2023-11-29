@@ -16,6 +16,8 @@ header{
   gap: 0 10rem;
   background-color: transparent;
   border-bottom: 1px solid var(--Gray30);
+
+  transition: transform .3s;
 }
 
 header > .logo{
