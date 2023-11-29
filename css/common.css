@@ -19,18 +19,22 @@ header{
 }
 
 header > .logo{
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bold;
 }
 header .gnb{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 50px;
   font-size: 1.2rem;
 }
 header a{
   color: #fff;
   text-decoration: none;
+}
+/* 마우스오버 */
+header a:hover{
+  font-weight: bold;
 }
 /* 활성화 */
 header.active{
