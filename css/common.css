@@ -82,9 +82,6 @@ header.active a{
   gap: 20px;
 }
 .quickMenu__item{
-  width: 56px;
-  height: 56px;
-  background-color: #000;
   border-radius: 50%;
   box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);
   
@@ -92,20 +89,32 @@ header.active a{
   justify-content: center;
   align-items: center;
 }
-.quickMenu__item>button{
-  all: unset;
-  width: 100%;
-  height: 100%;
+.quickMenu__item>.btn{
+  width: 56px;
+  height: 56px;
+  background: #000 no-repeat center/cover;
+  border: none;
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
 }
-/* --------------- 아이템 개별 세팅 --------------- */
-.quickMenu__item:nth-child(1) {
-  background-color: #FAE100;
+.quickMenu__item>.btn svg{
+  width: 30px;
+  height: 30px;
 }
-.quickMenu__item:nth-child(1) img{
-  width: 60%;
+/* 퀵 메뉴 버튼에 포커스 갔을 때 아웃라인 시인성 높이기 위해 색상 변경 */
+.quickMenu__item>.btn:focus-visible{
+  outline: 3px solid red;
+}
+/* --------------- 퀵메뉴 아이템 버튼 개별 세팅 --------------- */
+.quickMenu__item:nth-child(1)>.btn{
+  background: #FAE100 url(../assets/images/main/ico_kakao_quick.png) no-repeat center/60% ;
+}
+.quickMenu__item:nth-child(2)>.btn{
+  background: #000 url(../assets/svg/store.svg) no-repeat center/50% ;
+}
+.quickMenu__item:nth-child(3)>.btn{
+  background: #000 url(../assets/svg/arrowT.svg) no-repeat center/40% ;
 }
 .qrBox{
   position: absolute;
@@ -122,17 +131,17 @@ header.active a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* 잠시 숨겨둠 */
-  display: none;
 }
 .qrBox>button{
-  all: unset;
   position: absolute;
   top: 10px;
   right: 10px;
   width: 30px;
   height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent url(../assets/svg/ico_close_gray.svg) no-repeat center/75%;
   text-align: center;
   cursor: pointer;
 }
