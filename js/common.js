@@ -58,7 +58,7 @@ function handleLnbActive(){
   const lnb_height = $(".lnb").outerHeight() / 2;
   // 윈도우 높이(최상단 배너의 높이)를 넘어가는 경우
   if(window.scrollY >= window_height - $("header").outerHeight() + lnb_height){
-    console.log("최상단 배너 넘어갔음!");
+    // console.log("최상단 배너 넘어갔음!");
     // lnb 박스에 클래스 active 부여해서 화면에 고정
     $(".lnb").addClass("active");
     handleHeaderHide();
