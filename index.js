@@ -2,65 +2,108 @@
 window.addEventListener("DOMContentLoaded", ()=>{
 
   // 러쉬 소개 스와이퍼
-  const swiper = new Swiper(".lushInfo__banner", {
+  const lushInfo_swiper = new Swiper(".lushInfo__banner", {
     slidesPerView: "auto",
     spaceBetween: 80,
   });
 
-  const category1 = document.querySelector(".category1");
-  const category2 = document.querySelector(".category2");
 
-  // 내부 스와이퍼
-  const innerSwiper = new Swiper(`.productsInfo>.category1 .slideBanner`, {
-    slidesPerView: 3,
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    on: {
-      // 스와이퍼가 첫번째 슬라이드에 도달하면 이벤트 발생
-      reachBeginning: function(){
-        console.log("첫번째 내부 슬라이드 시작");
-        innerSwiper.autoplay.resume();
+
+
+
+  // // 제품 소개 내부 스와이퍼
+  const $subSwiper = $(".sub-swiper");
+  const subSwiper_arr = [];
+
+  $subSwiper.each(function(){
+    const autoSwiper= new Swiper(this, {
+      // slidesPerView: 'auto',
+      slidesPerView: 3,
+      // slidesPerGroup: 1,
+      // loop: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
       },
-      // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
-      reachEnd: function(){
-        console.log("첫번째 내부 슬라이드 끝");
-        // 내부 스와이퍼 자동 재생 멈추기
-        innerSwiper.autoplay.stop();
-        category1.style.opacity = "0";
-        category2.style.opacity = "1";
-        innerSwiper2.autoplay.start();
+      on: {
+        // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
+        reachEnd: function(){
+        console.log("내부 슬라이드 끝");
+        // 메인 스와이퍼 다음 슬라이드로 넘어가기
+        mainSwiper.slideNext();
+        }
+      }
+    });
+
+    // 내부 스와이퍼의 슬라이드에 마우스엔터시 멈춤
+    $('.sub-swiper .swiper-slide').on('mouseenter', function(){
+      autoSwiper.autoplay.stop();
+    });
+    // 내부 스와이퍼의 슬라이드에 마우스리브시 동작
+    $('.sub-swiper .swiper-slide').on('mouseleave', function(){
+      autoSwiper.autoplay.start();
+    });
+
+    // 내부 스와이퍼들 배열에 넣기
+    subSwiper_arr.push(autoSwiper);
+  });
+
+  // 오토플레이 초기화
+  function init(){
+    subSwiper_arr.forEach(function(ele){
+      ele.autoplay.stop();
+    })
+  }
+  init();
+
+  // 제품 소개 메인 스와이퍼
+  const mainSwiper = new Swiper(".mainSwiper", {
+    effect: 'fade',
+    speed:300,
+    fadeEffect: {
+      crossFade: true,
+      // crossFade: false,
+    },
+    grabCursor: true,
+    rewind : true,                           
+    // pagination: { 
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    on: {
+      slideChange: function(){
+        console.log("메인 스와이퍼 페이지 넘어감");
+        init();
+        subSwiper_arr[mainSwiper.realIndex].slideTo(0, 0, false);
+        subSwiper_arr[mainSwiper.realIndex].autoplay.start();
       }
     }
   });
-  innerSwiper.autoplay.start();
-  const innerSwiper2 = new Swiper(".productsInfo>.category2 .slideBanner", {
-    slidesPerView: 3,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    on: {
-      // 스와이퍼가 첫번째 슬라이드에 도달하면 이벤트 발생
-      reachBeginning: function(){
-        console.log("두번째 내부 슬라이드 시작");
-        category2.style.opacity = "0";
-        category1.style.opacity = "1";
-        innerSwiper2.autoplay.stop();
-        innerSwiper.autoplay.start();
-      },
-      // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
-      reachEnd: function(){
-        console.log("두번째 내부 슬라이드 끝");
-        // 내부 스와이퍼 자동 재생 멈추기
-        innerSwiper2.autoplay.stop();
+  // subSwiper_arr[0].autoplay.start();
 
-      }
-    }
-  });
-  innerSwiper2.autoplay.stop();
+
+  // const autoSwiper= new Swiper("#test1", {
+  //   // slidesPerView: 'auto',
+  //   slidesPerView: 3,
+  //   // slidesPerGroup: 1,
+  //   // loop: true,
+  //   grabCursor: true,
+  //   autoplay: {
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //   },
+  //   on: {
+  //     // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
+  //     reachEnd: function(){
+  //     console.log("내부 슬라이드 끝");
+  //     autoSwiper.slideTo(0, 0, false);
+  //     // autoSwiper.autoplay.start();
+  //     }
+  //   }
+  // });
+  // subSwiper_arr.push(autoSwiper);
+
 
 
   // QR코드 미니창 열기/닫기
