@@ -92,11 +92,11 @@ section.container{
 #accordion5id{
   animation: deactive 0.01s 0.3s forwards;
 }
-.accordion__icon{
-  display: inline-block;
+.accordion .iconAccordion{
   width: 24px;
   height: 24px;
-  background: url(../assets/svg/ico_arrowB.svg) no-repeat center/cover;
+  position: absolute;
+  right: 6px;
 }
 .accordion__panel{
   padding: 20px 10px;
@@ -127,9 +127,9 @@ section.container{
 .accordion__trigger.active .accordion__title{
   font-weight: bold;
 }
-.accordion__trigger.active .accordion__icon{
-  /* background-color: red; */
-  fill: red;
+.accordion__trigger.active>.iconAccordion{
+  transform: rotate(180deg);
+  fill: var(--Gray20);
 }
 @keyframes deactive {
   from{
