@@ -106,7 +106,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-  // QR코드 미니창 열기/닫기
+  ////////// QR코드 미니창 열기/닫기 //////////
   const qrBox = document.querySelector(".qrBox");
   const closeBtn = document.querySelector(".qrBox>button");
   const storeBtn = document.querySelector(".goStore");
@@ -117,7 +117,13 @@ window.addEventListener("DOMContentLoaded", ()=>{
     qrBox.style.display="flex";
   });
 
-  // 롤링 배너
+  ////////// 위로 올라가기(.goTop) 버튼 클릭시 해당 페이지 맨 위로 올라가기 //////////
+  const goTopBtn = $(".goTop");
+  goTopBtn.click(function(){
+    window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+  });
+
+  ////////// 롤링 배너 //////////
   const rollingBanner = document.querySelector(".rollingBanner .wrapper");
   rollingBanner.id = "wrapper01";
   const newWrapper02 = rollingBanner.cloneNode(true);
