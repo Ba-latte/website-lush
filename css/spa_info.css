@@ -345,6 +345,3 @@ article.branchInfo{
     border-bottom: 1px solid transparent;
   }
 }
-.branchInfo>figure:not(.active){
-  display: none;
-}
