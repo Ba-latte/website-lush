@@ -65,7 +65,7 @@ accordion__panel.hide();
 
 // 처음부터 펼쳐져있는(.spread) 아코디언의 경우
 if($(".spread").length){
-  // console.log("스프레드 아코디언 있음!");
+  console.log("스프레드 아코디언 있음!");
   // 첫번째 패널 펼쳐놓기
   $(".spread").find(".accordion__panel").eq(0).show();
 }
@@ -157,7 +157,7 @@ function imageAnimation(category, time){
   });
   // 시간 간격을 두고 첫번째 이미지 태그 src를 원래대로 복구, 다음번째 이미지 태그 src 변경
   setInterval(function(){
-    // console.log("실행중");
+    console.log("실행중");
     imgTag.eq(indexNumber).attr('src', function(idx, attr){
       return attr.replace('active@2x', 'off@2x');
     });
