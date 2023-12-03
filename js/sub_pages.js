@@ -22,27 +22,30 @@ function onYouTubeIframeAPIReady(){
     }
   });
 }
+
 // 플레이어 재생/멈춤을 컨트롤하는 함수
-function controlPlayer() {
-  const window_scrollTop = $(window).scrollTop();
-  const playerY = $("#spa_treatment_preview").offset().top;
-  const playerHeight = $(".videoBox").height();
-  const window_height = $(window).innerHeight();
-  
-  if( (playerY <= (window_height / 5*4) + window_scrollTop) && (playerY > window_scrollTop - (playerHeight/5*3)) ){
-    // console.log("화면에 보이는 중");
-    player.playVideo();
+if($("#spa_treatment_preview").length){
+  function controlPlayer() {
+    const window_scrollTop = $(window).scrollTop();
+    const playerY = $("#spa_treatment_preview").offset().top;
+    const playerHeight = $(".videoBox").height();
+    const window_height = $(window).innerHeight();
+    
+    if( (playerY <= (window_height / 5*4) + window_scrollTop) && (playerY > window_scrollTop - (playerHeight/5*3)) ){
+      // console.log("화면에 보이는 중");
+      player.playVideo();
+    }
+    else{
+      // console.log("화면에 안 보이고 있음");
+      player.pauseVideo();
+    }
   }
-  else{
-    // console.log("화면에 안 보이고 있음");
-    player.pauseVideo();
-  }
+  const timer = setTimeout(function(){
+    $(window).on('scroll', function(){
+      controlPlayer();
+    });
+  }, 500);
 }
-const timer = setTimeout(function(){
-  $(window).on('scroll', function(){
-    controlPlayer();
-  });
-}, 500);
 
 
 
@@ -145,3 +148,35 @@ buy__button.click(function(){
   window.open($(this).attr("href"), '_blank', "noreferrer, width=430, height=800");
   return false;
 });
+
+
+// 스파 이용 안내 페이지의 이미지 애니메이션
+let intervalControll = false;
+
+function imageAnimation(category, time){
+  const imgTag = $(`${category} .sequenceBox > li > img`);
+  let indexNumber = 0;
+  // 첫번째 이미지 태그 src 변경
+  imgTag.eq(indexNumber).attr('src', function(idx, attr){
+    return attr.replace('off@2x', 'active@2x');
+  });
+  // 시간 간격을 두고 첫번째 이미지 태그 src를 원래대로 복구, 다음번째 이미지 태그 src 변경
+  setInterval(function(){
+    console.log("실행중");
+    imgTag.eq(indexNumber).attr('src', function(idx, attr){
+      return attr.replace('active@2x', 'off@2x');
+    });
+
+    // index번호 다음번째로 바꾸기
+    indexNumber = (indexNumber + 1) % imgTag.length;
+
+    imgTag.eq(indexNumber).attr('src', function(idx, attr){
+      return attr.replace('off@2x', 'active@2x');
+    });
+  }, time);
+}
+
+if($(".step").length){
+  imageAnimation('.howToBuy', 1500);
+  imageAnimation('.howToReservation', 1500);
+}
