@@ -2,29 +2,22 @@
 console.log("서브페이지 JS파일 로딩 완료");
 
 //////////// 스파 소개 페이지 유튜브 동영상 멈춤/재생 ////////////
-// 비동기적으로 아이프레임 api 넣기
-// var tag = document.createElement('script');
-// tag.src = "https://www.youtube.com/iframe_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-// api 코드 다운 후에 아이프레임 생성하기
-let player;
-function onYouTubeIframeAPIReady(){
-  player = new YT.Player('spa_treatment_preview', {
-    videoId: 'G9JsHWeO3c0',
-    loop: true,
-    playerVars: {
-      'list': 'TLGGWp2jwoenSjYyODExMjAyMw',
-      'loop': 1,
-    },
-    events: {
-      'onReady': controlPlayer,
-    }
-  });
-}
-
-// 플레이어 재생/멈춤을 컨트롤하는 함수
 if($("#spa_treatment_preview").length){
+  let player;
+  function onYouTubeIframeAPIReady(){
+    player = new YT.Player('spa_treatment_preview', {
+      videoId: 'IYfPp9o5E9I',
+      loop: true,
+      playerVars: {
+        'list': 'IYfPp9o5E9I',
+        'loop': 1,
+      },
+      events: {
+        'onReady': controlPlayer,
+      }
+    });
+  }
+  // 플레이어 재생/멈춤을 컨트롤하는 함수
   function controlPlayer() {
     const window_scrollTop = $(window).scrollTop();
     const playerY = $("#spa_treatment_preview").offset().top;
@@ -34,12 +27,14 @@ if($("#spa_treatment_preview").length){
     if( (playerY <= (window_height / 5*4) + window_scrollTop) && (playerY > window_scrollTop - (playerHeight/5*3)) ){
       // console.log("화면에 보이는 중");
       player.playVideo();
+      player.mute();
     }
     else{
       // console.log("화면에 안 보이고 있음");
       player.pauseVideo();
     }
   }
+  // 스크롤 동작시
   const timer = setTimeout(function(){
     $(window).on('scroll', function(){
       controlPlayer();
