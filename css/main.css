@@ -273,34 +273,22 @@ main > section{
 }
 
 /* ------- 제품 소개 ------- */
-.productsInfo{
+/* .productsInfo{
   position: relative;
   margin-bottom: 100px;
   padding-top: 100px;
-  border: 1px solid #000;
 }
 .productsInfo>.title{
   width: 0;
   height: 0;
   overflow: hidden;
-}
-.productsInfo .productsInfo__category{
+} */
+/* 각 카테고리별 리스트 */
+/* .productsInfo .productsInfo__category{
   margin: 0 0 0 20%;
   width:80%;
   position: relative;
   display: flex;
-  transition: opacity .5s;
-  border: 1px solid red;
-}
-.productsInfo .category1{
-  opacity: 1;
-}
-.productsInfo .category2{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  
-  opacity: 0;
 }
 .productsInfo__category img{
   width: 475px;
@@ -319,14 +307,14 @@ main > section{
   font-size: 2rem;
   letter-spacing: -2px;
 }
-.productsInfo .slideBanner{
+.productsInfo .sub-swiper{
   margin-top: 50px;
 }
-.productsInfo .slideBanner .slide{
+.productsInfo .sub-swiper .slide{
   padding: 30px;
   box-sizing: border-box;
 }
-.productsInfo .slideBanner img{
+.productsInfo .sub-swiper img{
   width: 100%;
   height: 100%;
 
@@ -336,7 +324,7 @@ main > section{
   filter .5s,
   border-radius .5s;
 }
-.productsInfo .slideBanner figcaption{
+.productsInfo .sub-swiper figcaption{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -346,8 +334,8 @@ main > section{
   font-weight: bold;
   font-size: 1.3rem;
 }
-.productsInfo .slideBanner h5,
-.productsInfo .slideBanner p{
+.productsInfo .sub-swiper h5,
+.productsInfo .sub-swiper p{
   margin-bottom: 10px;
   color: #fff;
   opacity: 0;
@@ -356,15 +344,19 @@ main > section{
   opacity .5s,
   transform .5s;
 }
-.productsInfo .slideBanner figure:hover img{
+.productsInfo .sub-swiper figure:hover img{
   filter: brightness(50%);
   border-radius: 50%;
 }
-.productsInfo .slideBanner figure:hover h5,
-.productsInfo .slideBanner figure:hover p{
+.productsInfo .sub-swiper figure:hover h5,
+.productsInfo .sub-swiper figure:hover p{
   opacity: 1;
   transform: translateY(0);
-}
+} */
+
+
+
+
 
 /* ------- 러쉬가 지켜온 가치들 ------- */
 .lushValues{
