@@ -82,13 +82,17 @@ window.addEventListener("scroll", ()=>{
 const qrBox = document.querySelector(".qrBox");
 const closeBtn = document.querySelector(".qrBox>button");
 const storeBtn = document.querySelector(".goStore");
+const cacaoBtn = $(".goKakao");
 closeBtn.addEventListener("click", ()=>{
   qrBox.style.display="none";
 });
 storeBtn.addEventListener("click", ()=>{
   qrBox.style.display="flex";
 });
-
+cacaoBtn.on('click', function(event){
+  event.preventDefault();
+  alert("준비중입니다.");
+});
 
 
 ////////// 위로 올라가기(.goTop) 버튼 클릭시 해당 페이지 맨 위로 올라가기 //////////
