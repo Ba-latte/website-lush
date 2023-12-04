@@ -1,7 +1,7 @@
 // 윈도우 로드시 실행
 window.addEventListener("DOMContentLoaded", ()=>{
 
-  // 러쉬 소개 스와이퍼
+  ////////// 러쉬 소개 스와이퍼 //////////
   const lushInfo_swiper = new Swiper(".lushInfo__banner", {
     slidesPerView: "auto",
     spaceBetween: 80,
@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-  // // 제품 소개 내부 스와이퍼
-  const $subSwiper = $(".sub-swiper");
+  ////////// 제품 소개 내부 스와이퍼 //////////
+  const $subSwiper = $(".subSwiper");
   const subSwiper_arr = [];
 
   $subSwiper.each(function(){
@@ -29,7 +29,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
       on: {
         // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
         reachEnd: function(){
-        console.log("내부 슬라이드 끝");
         // 메인 스와이퍼 다음 슬라이드로 넘어가기
         mainSwiper.slideNext();
         }
@@ -37,11 +36,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
     });
 
     // 내부 스와이퍼의 슬라이드에 마우스엔터시 멈춤
-    $('.sub-swiper .swiper-slide').on('mouseenter', function(){
+    $('.subSwiper .swiper-slide').on('mouseenter', function(){
+      console.log("마우스엔터");
       autoSwiper.autoplay.stop();
     });
     // 내부 스와이퍼의 슬라이드에 마우스리브시 동작
-    $('.sub-swiper .swiper-slide').on('mouseleave', function(){
+    $('.subSwiper .swiper-slide').on('mouseleave', function(){
       autoSwiper.autoplay.start();
     });
 
@@ -60,51 +60,30 @@ window.addEventListener("DOMContentLoaded", ()=>{
   // 제품 소개 메인 스와이퍼
   const mainSwiper = new Swiper(".mainSwiper", {
     effect: 'fade',
-    speed:300,
+    speed: 500,
     fadeEffect: {
-      crossFade: true,
       // crossFade: false,
+      crossFade: true,
     },
     grabCursor: true,
     rewind : true,                           
-    // pagination: { 
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
+    pagination: { 
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     on: {
       slideChange: function(){
-        console.log("메인 스와이퍼 페이지 넘어감");
+        // 서브 스와이퍼 오토플레이 초기화
         init();
+        // 서브 스와이퍼 첫 슬라이드로 이동
         subSwiper_arr[mainSwiper.realIndex].slideTo(0, 0, false);
+        // 서브 스와이퍼 오토플레이 시작
         subSwiper_arr[mainSwiper.realIndex].autoplay.start();
       }
     }
   });
-  // subSwiper_arr[0].autoplay.start();
-
-
-  // const autoSwiper= new Swiper("#test1", {
-  //   // slidesPerView: 'auto',
-  //   slidesPerView: 3,
-  //   // slidesPerGroup: 1,
-  //   // loop: true,
-  //   grabCursor: true,
-  //   autoplay: {
-  //     delay: 1000,
-  //     disableOnInteraction: false,
-  //   },
-  //   on: {
-  //     // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
-  //     reachEnd: function(){
-  //     console.log("내부 슬라이드 끝");
-  //     autoSwiper.slideTo(0, 0, false);
-  //     // autoSwiper.autoplay.start();
-  //     }
-  //   }
-  // });
-  // subSwiper_arr.push(autoSwiper);
-
-
+  // 맨 처음 서브 스와이퍼 오토플레이 가동
+  subSwiper_arr[0].autoplay.start();
 
 
   ////////// 롤링 배너 //////////

@@ -273,21 +273,16 @@ main > section{
 }
 
 /* ------- 제품 소개 ------- */
-/* .productsInfo{
+.productsInfo{
   position: relative;
   margin-bottom: 100px;
   padding-top: 100px;
 }
-.productsInfo>.title{
-  width: 0;
-  height: 0;
-  overflow: hidden;
-} */
-/* 각 카테고리별 리스트 */
-/* .productsInfo .productsInfo__category{
+.productsInfo .mainSwiper{
   margin: 0 0 0 20%;
-  width:80%;
-  position: relative;
+  width: 80%;
+}
+.productsInfo .productsInfo__category{
   display: flex;
 }
 .productsInfo__category img{
@@ -301,20 +296,22 @@ main > section{
   margin-bottom: 30px;
   padding-left: 30px;
   font-size: 1.3rem;
+  background-color: #fff;
 }
 .productsInfo .contentBox .desc{
   padding-left: 30px;
   font-size: 2rem;
   letter-spacing: -2px;
+  background-color: #fff;
 }
-.productsInfo .sub-swiper{
-  margin-top: 50px;
+.productsInfo .subSwiper{
+  margin-top: 70px;
 }
-.productsInfo .sub-swiper .slide{
+.productsInfo .subSwiper .slide{
   padding: 30px;
   box-sizing: border-box;
 }
-.productsInfo .sub-swiper img{
+.productsInfo .subSwiper img{
   width: 100%;
   height: 100%;
 
@@ -324,7 +321,8 @@ main > section{
   filter .5s,
   border-radius .5s;
 }
-.productsInfo .sub-swiper figcaption{
+/* 각 제품 이미지에 마우스오버시 */
+.productsInfo .subSwiper figcaption{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,8 +332,8 @@ main > section{
   font-weight: bold;
   font-size: 1.3rem;
 }
-.productsInfo .sub-swiper h5,
-.productsInfo .sub-swiper p{
+.productsInfo .subSwiper h5,
+.productsInfo .subSwiper p{
   margin-bottom: 10px;
   color: #fff;
   opacity: 0;
@@ -344,19 +342,29 @@ main > section{
   opacity .5s,
   transform .5s;
 }
-.productsInfo .sub-swiper figure:hover img{
+.productsInfo .subSwiper figure:hover img{
   filter: brightness(50%);
   border-radius: 50%;
 }
-.productsInfo .sub-swiper figure:hover h5,
-.productsInfo .sub-swiper figure:hover p{
+.productsInfo .subSwiper figure:hover h5,
+.productsInfo .subSwiper figure:hover p{
   opacity: 1;
   transform: translateY(0);
-} */
-
-
-
-
+}
+/* 페이지네이션 */
+.productsInfo .mainSwiper .swiper-pagination{
+  position: relative;
+  bottom: 0;
+}
+/* 불릿 */
+.productsInfo .mainSwiper .swiper-pagination-bullet{
+  width: 20px;
+  height: 2px;
+  border-radius: unset;
+}
+.productsInfo .mainSwiper .swiper-pagination-bullet-active{
+  background: var(--Gray80);
+}
 
 /* ------- 러쉬가 지켜온 가치들 ------- */
 .lushValues{

@@ -201,172 +201,194 @@
         </section>
         <!-- 6.제품 소개 : Swiper -->
         <section class="productsInfo">
-            <h3 class="title">카테고리별 대표 제품 소개</h3>
-            <!-- 배쓰 제품 리스트 -->
-            <article class="productsInfo__category category1">
-                <figure>
-                    <img src="./assets/images/main/main_bath@3x.png" alt="배쓰 카테고리">
-                </figure>
-                <div class="contentBox">
-                    <h4 class="title">배쓰</h4>
-                    <p class="desc">
-                        당신에게 향기로운 입욕을 
-                        <br>
-                        선물합니다.
-                    </p>
-                    <!-- 스와이퍼 -->
-                    <div class="swiper slideBanner">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_01@3x.png" alt="섹스밤 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">섹스밤</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_02@3x.png" alt="인터갈락틱 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">인터갈락틱</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_03@3x.png" alt="더 컴포터 버블바">
-                                    <figcaption>
-                                        <h5 class="name">더 컴포터</h5>
-                                        <p class="">버블바</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_04@3x.png" alt="슬리피 버블바">
-                                    <figcaption>
-                                        <h5 class="name">슬리피</h5>
-                                        <p class="">버블바</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_05@3x.png" alt="가디스 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">가디스</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_06@3x.png" alt="사쿠라 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">사쿠라</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_07@3x.png" alt="써니사이드 버블바">
-                                    <figcaption>
-                                        <h5 class="name">써니사이드</h5>
-                                        <p class="">버블바</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_08@3x.png" alt="트와일라잇 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">트와일라잇</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_09@3x.png" alt="딥 슬립 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">딥 슬립</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/bath_10@3x.png" alt="빅 블루 배쓰밤">
-                                    <figcaption>
-                                        <h5 class="name">빅 블루</h5>
-                                        <p class="">배쓰밤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
+            <h3 class="title blind">카테고리별 대표 제품 소개</h3>
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <!-- 배쓰 제품 리스트 -->
+                    <article class="productsInfo__category swiper-slide">
+                        <figure>
+                            <img src="./assets/images/main/main_bath@3x.png" alt="배쓰 카테고리">
+                        </figure>
+                        <div class="contentBox">
+                            <h4 class="title">배쓰</h4>
+                            <p class="desc">
+                                당신에게 향기로운 입욕을
+                                <br>
+                                선물합니다.
+                            </p>
+                            <!-- 서브 스와이퍼 -->
+                            <div class="swiper subSwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_01@3x.png" alt="섹스밤 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">섹스밤</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_02@3x.png" alt="인터갈락틱 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">인터갈락틱</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_03@3x.png" alt="더 컴포터 버블바">
+                                            <figcaption>
+                                                <h5 class="name">더 컴포터</h5>
+                                                <p class="">버블바</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_04@3x.png" alt="슬리피 버블바">
+                                            <figcaption>
+                                                <h5 class="name">슬리피</h5>
+                                                <p class="">버블바</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_05@3x.png" alt="가디스 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">가디스</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_06@3x.png" alt="사쿠라 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">사쿠라</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_07@3x.png" alt="써니사이드 버블바">
+                                            <figcaption>
+                                                <h5 class="name">써니사이드</h5>
+                                                <p class="">버블바</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_08@3x.png" alt="트와일라잇 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">트와일라잇</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_09@3x.png" alt="딥 슬립 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">딥 슬립</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/bath_10@3x.png" alt="빅 블루 배쓰밤">
+                                            <figcaption>
+                                                <h5 class="name">빅 블루</h5>
+                                                <p class="">배쓰밤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 샤워 제품 리스트 -->
+                    <article class="productsInfo__category swiper-slide">
+                        <figure>
+                            <img src="./assets/images/main/main_shower@3x.png" alt="샤워 카테고리">
+                        </figure>
+                        <div class="contentBox">
+                            <h4 class="title">샤워</h4>
+                            <p class="desc">
+                                일렁이는 향기와 함께 피부를
+                                <br>
+                                건강하게 지켜주세요.
+                            </p>
+                            <!-- 서브 스와이퍼 -->
+                            <div class="swiper subSwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/shower_01@3x.png" alt="슬리피 샤워 젤">
+                                            <figcaption>
+                                                <h5 class="name">슬리피</h5>
+                                                <p class="">샤워 젤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/shower_02@3x.png" alt="더 올리브 브랜치 샤워 젤">
+                                            <figcaption>
+                                                <h5 class="name">더 올리브 브랜치</h5>
+                                                <p class="">샤워 젤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/shower_03@3x.png" alt="더티 스프링워시">
+                                            <figcaption>
+                                                <h5 class="name">더티 스프링워시</h5>
+                                                <p class="">샤워 젤</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        <figure>
+                                            <img src="./assets/images/main/shower_04@3x.png" alt="럽럽럽 샤워 스크럽">
+                                            <figcaption>
+                                                <h5 class="name">럽럽럽</h5>
+                                                <p class="">샤워 스크럽</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        5번
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        6번
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        7번
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        8번
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        9번
+                                    </li>
+                                    <li class="swiper-slide slide">
+                                        10번
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-pagination"></div>
-            </article>
-            <!-- 샤워 제품 리스트 -->
-            <article class="productsInfo__category category2">
-                <figure>
-                    <img src="./assets/images/main/main_shower@3x.png" alt="샤워 카테고리">
-                </figure>
-                <div class="contentBox">
-                    <h4 class="title">샤워</h4>
-                    <p class="desc">
-                        일렁이는 향기와 함께 피부를
-                        <br>
-                        건강하게 지켜주세요.
-                    </p>
-                    <!-- 스와이퍼 -->
-                    <div class="swiper slideBanner innerSwiper2">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/shower_01@3x.png" alt="슬리피 샤워 젤">
-                                    <figcaption>
-                                        <h5 class="name">슬리피</h5>
-                                        <p class="">샤워 젤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/shower_02@3x.png" alt="더 올리브 브랜치 샤워 젤">
-                                    <figcaption>
-                                        <h5 class="name">더 올리브 브랜치</h5>
-                                        <p class="">샤워 젤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/shower_03@3x.png" alt="더티 스프링워시">
-                                    <figcaption>
-                                        <h5 class="name">더티 스프링워시</h5>
-                                        <p class="">샤워 젤</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="swiper-slide slide">
-                                <figure>
-                                    <img src="./assets/images/main/shower_04@3x.png" alt="럽럽럽 샤워 스크럽">
-                                    <figcaption>
-                                        <h5 class="name">럽럽럽</h5>
-                                        <p class="">샤워 스크럽</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
+            </div>
         </section>
         <!-- 7.매장 찾기 -->
         <section class="lushShopInfo">
