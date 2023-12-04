@@ -330,7 +330,7 @@ main > section{
 
   text-align: center;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 18px;
 }
 .productsInfo .subSwiper h5,
 .productsInfo .subSwiper p{
@@ -354,6 +354,7 @@ main > section{
 /* 페이지네이션 */
 .productsInfo .mainSwiper .swiper-pagination{
   position: relative;
+  padding-top: 30px;
   bottom: 0;
 }
 /* 불릿 */
