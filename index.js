@@ -37,7 +37,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     // 내부 스와이퍼의 슬라이드에 마우스엔터시 멈춤
     $('.subSwiper .swiper-slide').on('mouseenter', function(){
-      console.log("마우스엔터");
       autoSwiper.autoplay.stop();
     });
     // 내부 스와이퍼의 슬라이드에 마우스리브시 동작
