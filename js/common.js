@@ -1,5 +1,4 @@
 // 공통 부분
-console.log("공통 부분 js 로딩 완료");
 
 const window_height = $(window).height();
 // 최상단 배너의 콘텐츠 박스 높이

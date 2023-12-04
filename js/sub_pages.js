@@ -1,5 +1,4 @@
 // 서브페이지 JS
-console.log("서브페이지 JS파일 로딩 완료");
 
 //////////// 스파 소개 페이지 유튜브 동영상 멈춤/재생 ////////////
 if($("#spa_treatment_preview").length){
@@ -46,7 +45,6 @@ if($("#spa_treatment_preview").length){
 
 //////////// 매장 안내 페이지의 스와이퍼 ////////////
 if($(".shopInfoBanner").length){
-  console.log('스와이퍼 배너 있음');
   var swiper = new Swiper(".shopInfoBanner", {
     loop: true,
     pagination: {
