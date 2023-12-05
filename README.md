@@ -1,11 +1,12 @@
 # website-lush
-핸드메이드 코스메틱 브랜드인 '러쉬'의 웹사이트 구현
+핸드메이드 코스메틱 브랜드인 '러쉬'의 웹사이트 구현   
+👉DEMO : <a href="https://ba-latte.github.io/website-lush/" target="_blank">lush 포트폴리오</a>
 
 # 🧼lush🧴
 
 자바스크립트와 제이쿼리를 활용하여 제작한 포트폴리오입니다.   
 해당 포트폴리오를 제작하며 작성한 일지가 궁금하시다면 아래의 링크를 통해 블로그로 이동해주세요.   
-<a href="https://blog.naver.com/youj_lim/223258427827" target="_blank">블로그로 이동</a>
+👉<a href="https://blog.naver.com/youj_lim/223258427827" target="_blank">블로그로 이동</a>
 
 ※ 새창 띄우기를 원한다면 ctrl + 클릭해주시기 바랍니다.
 
@@ -73,8 +74,10 @@
 ### 2-2. 배포 환경
 깃허브 페이지를 이용해 배포하였습니다.   
 개발할 때 기준으로 사용한 브라우저는 **Chrome**이나 **Edge**, **웨일** 등에서도 이용 가능합니다.   
-포트폴리오 사이트 주소는 다음과 같습니다.   
-👉 <a href="https://ba-latte.github.io/website-lush/" target="_blank">lush</a>
+포트폴리오를 확인하시려면 아래의 링크를 통해 이동해주세요.   
+👉 <a href="https://ba-latte.github.io/website-lush/" target="_blank">lush 포트폴리오로 이동하기</a>   
+
+※ 새창 띄우기를 원한다면 ctrl + 클릭해주시기 바랍니다.
 
 <br /><br />
 <br /><br />
@@ -82,6 +85,9 @@
 ## 3. 🧴프로젝트 기획
 ### 3-1. 사이트 선정
 👉 <a href="https://weare.lush.co.kr/" target="_blank">프레쉬 핸드메이드 코스메틱 러쉬</a>   
+
+※ 새창 띄우기를 원한다면 ctrl + 클릭해주시기 바랍니다.
+
 선정한 사이트는 프레쉬 핸드메이드 코스메틱 브랜드인 '러쉬'의 한국 공식 사이트입니다.   
 이 사이트를 선정한 이유는 다음과 같습니다.   
 1. 구조가 단순함   
