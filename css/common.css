@@ -46,8 +46,6 @@ header.active a{
   color: var(--Gray90);
 }
 /* 본문으로 바로가기 */
-#skip{
-}
 #skip>a{
   width: 100%;
   height: 50px;
