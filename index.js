@@ -1,6 +1,36 @@
-// 윈도우 로드시 실행
-window.addEventListener("DOMContentLoaded", ()=>{
+////////// 메인 배너의 동영상 재생/멈춤 //////////
+if($("#mainBannerVideo").length){
+  let player;
+  // 유튜브 아이프레임 동영상 생성/컨트롤
+  function onYouTubeIframeAPIReady(){
+    player = new YT.Player('mainBannerVideo', {
+      events: {
+        'onReady': onReadyPlayer,
+      }
+    });
+  }
+  // 플레이어 재생/멈춤을 컨트롤하는 함수
+  function controlPlayer() {
+    const window_scrollTop = $(window).scrollTop();
+    const playerHeight = $(".videoBox iframe").height();
+    
+    if(window_scrollTop > playerHeight){
+      player.pauseVideo();
+    }
+    else{
+      player.playVideo();
+      player.mute();
+    }
+  }
+  // 플레이어 준비됐을 때 실행하는 함수
+  function onReadyPlayer(){
+    $(window).on('scroll', function(){
+      controlPlayer();
+    });
+  }
+}
 
+window.addEventListener("DOMContentLoaded", ()=>{
   ////////// 러쉬 소개 스와이퍼 //////////
   const lushInfo_swiper = new Swiper(".lushInfo__banner", {
     slidesPerView: "auto",
