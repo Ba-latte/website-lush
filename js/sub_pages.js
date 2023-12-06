@@ -12,7 +12,7 @@ if($("#spa_treatment_preview").length){
         'loop': 1,
       },
       events: {
-        'onReady': controlPlayer,
+        'onReady': onReadyPlayer,
       }
     });
   }
@@ -24,21 +24,19 @@ if($("#spa_treatment_preview").length){
     const window_height = $(window).innerHeight();
     
     if( (playerY <= (window_height / 5*4) + window_scrollTop) && (playerY > window_scrollTop - (playerHeight/5*3)) ){
-      // console.log("화면에 보이는 중");
       player.playVideo();
       player.mute();
     }
     else{
-      // console.log("화면에 안 보이고 있음");
       player.pauseVideo();
     }
   }
-  // 스크롤 동작시
-  const timer = setTimeout(function(){
+  // 플레이어 준비됐을 때 실행하는 함수
+  function onReadyPlayer(){
     $(window).on('scroll', function(){
       controlPlayer();
     });
-  }, 500);
+  }
 }
 
 
