@@ -37,6 +37,7 @@ body *{
 }
 /* 대체 텍스트 */
 .blind{
+    display: inline-block;
     height: 0;
     overflow: hidden;
 }
