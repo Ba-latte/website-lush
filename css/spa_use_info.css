@@ -202,8 +202,9 @@ section.precautions{
 .precautions ul{
   list-style: inside;
 }
-.precautions .textBox>p{
+.precautions .textBox>li:first-child{
   margin-bottom: 20px;
+  list-style: none;
 }
 .precautions li{
   margin-bottom: 10px;
