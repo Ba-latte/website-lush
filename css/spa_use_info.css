@@ -202,7 +202,7 @@ section.precautions{
 .precautions ul{
   list-style: inside;
 }
-.precautions .textBox>li:first-child{
+.precautions .accordion__panel:last-of-type .textBox>li:first-child{
   margin-bottom: 20px;
   list-style: none;
 }
