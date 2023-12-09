@@ -345,18 +345,16 @@ main > section{
   filter .5s,
   border-radius .5s;
 }
-/* 각 제품 이미지에 마우스오버시 */
 .productsInfo .subSwiper figcaption{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  
   text-align: center;
-  font-weight: bold;
   font-size: 18px;
 }
-.productsInfo .subSwiper h5,
+.productsInfo .subSwiper h4,
 .productsInfo .subSwiper p{
   margin-bottom: 10px;
   color: #fff;
@@ -366,11 +364,15 @@ main > section{
   opacity .5s,
   transform .5s;
 }
+.productsInfo .subSwiper h4{
+  font-weight: bold;
+}
+/* 각 제품 이미지에 마우스오버시 */
 .productsInfo .subSwiper figure:hover img{
   filter: brightness(50%);
   border-radius: 50%;
 }
-.productsInfo .subSwiper figure:hover h5,
+.productsInfo .subSwiper figure:hover h4,
 .productsInfo .subSwiper figure:hover p{
   opacity: 1;
   transform: translateY(0);

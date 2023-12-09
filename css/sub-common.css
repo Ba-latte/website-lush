@@ -31,13 +31,13 @@ section.container{
 }
 .container *{
   color: #fff;
-  font-weight: bold;
 }
 .container .title{
   font-size: 1.3rem;
 }
 .container .subTitle{
   font-size: 4rem;
+  font-weight: bold;
 }
 
 /* LNB 메뉴 */
