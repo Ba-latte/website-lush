@@ -1,5 +1,13 @@
 // 서브페이지 JS
 
+//////////// 캠페인 - 기부와 나눔, 자원 순환 페이지의 상세 보고서 페이지로의 링크 막기 ////////////
+if($(".contentArea__link").length){
+  $(".contentArea__link").find("a").on('click', function(event){
+    event.preventDefault();
+    alert("준비중입니다.");
+  })
+}
+
 //////////// 스파 소개 페이지 유튜브 동영상 멈춤/재생 ////////////
 if($("#spa_treatment_preview").length){
   let player;
