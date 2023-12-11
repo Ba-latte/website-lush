@@ -3,8 +3,8 @@
 
 자바스크립트와 제이쿼리를 활용하여 제작한 포트폴리오입니다.   
 해당 포트폴리오를 제작하며 작성한 일지가 궁금하시다면 아래의 링크를 통해 블로그로 이동해주세요.   
-👉<a href="https://blog.naver.com/youj_lim/223258427827" target="_blank">블로그로 이동</a>
-👉DEMO : <a href="https://ba-latte.github.io/website-lush/" target="_blank">lush 포트폴리오</a>
+👉<a href="https://blog.naver.com/youj_lim/223258427827" target="_blank">블로그로 이동</a>   
+👉DEMO : <a href="https://ba-latte.github.io/website-lush/" target="_blank">lush 포트폴리오</a>   
 
 ※ 새창 띄우기를 원한다면 ctrl + 클릭해주시기 바랍니다.
 
