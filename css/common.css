@@ -203,3 +203,26 @@ footer .copyright>span{
   font-size: 0.9rem;
   color: var(--Gray50);
 }
+
+
+
+/* --------------- 미디어쿼리 --------------- */
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  /* 퀵 메뉴 */
+  .quickMenu{
+    bottom: 12%;
+  }
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  
+}

@@ -51,7 +51,7 @@ main > section{
 .banner .contentBox{
   position: absolute;
   bottom: 20%;
-  left: 300px;
+  left: 15%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ main > section{
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 1400px;
+  max-width: 1400px;
   height: 350px;
   margin: 0 auto 100px;
   padding-top: 100px;
@@ -309,7 +309,7 @@ main > section{
 .productsInfo .productsInfo__category{
   display: flex;
 }
-.productsInfo__category img{
+.productsInfo__category > figure img{
   width: 475px;
   height: 560px;
 }
@@ -477,4 +477,66 @@ main > section{
   100%{
     transform: translateX(-200%);
   }
+}
+
+
+/* --------------- 미디어쿼리 --------------- */
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  /* 메인 배너 */
+  .banner .title{
+    font-size: 45px;
+  }
+  .banner .sub-title{
+    font-size: 30px;
+  }
+  .banner .desc{
+    font-size: 16px;
+  }
+  /* 미리보는 러쉬 */
+  .previewLush img{
+    width: 250px;
+  }
+  /* 설문조사 */
+  .survey{
+    margin: 0 50px;
+  }
+  /* 러쉬 소개 */
+  .lushInfo>.title{
+    margin: 0 0 20px 15%;
+  }
+  .lushInfo .lushInfo__banner{
+    margin: 0 0 0 15%;
+  }
+  .lushInfo figcaption{
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  /* 러쉬 제품 소개 */
+  .productsInfo .mainSwiper{
+    margin: 0 0 0 15%;
+  }
+  .productsInfo__category > figure img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+  }
+  .productsInfo .contentBox{
+    width: calc(100% - 300px);
+  }
+  .productsInfo .subSwiper .slide{
+    padding: 15px;
+  }
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  
 }
