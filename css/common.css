@@ -220,9 +220,17 @@ footer .copyright>span{
 }
 /* 모바일 가로, 태블릿 세로 기준 */
 @media all and (min-width: 480px) and (max-width: 767px) {
-  
+  /* 헤더 영역 */
+  header{
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 /* 모바일 세로 기준 */
 @media all and (max-width: 479px) {
-  
+  /* 헤더 영역 */
+  header{
+    flex-direction: column;
+    gap: 20px;
+  }
 }

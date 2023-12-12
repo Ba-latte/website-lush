@@ -309,12 +309,20 @@ main > section{
 .productsInfo .productsInfo__category{
   display: flex;
 }
+.productsInfo__category > figure{
+  width: 35%;
+  height: 100%;
+}
 .productsInfo__category > figure img{
-  width: 475px;
-  height: 560px;
+  /* width: 475px; */
+  /* height: 560px; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .productsInfo .contentBox{
-  width: calc(100% - 475px);
+  /* width: calc(100% - 475px); */
+  width: 65%;
 }
 .productsInfo .contentBox .title{
   margin-bottom: 30px;
@@ -329,10 +337,10 @@ main > section{
   background-color: #fff;
 }
 .productsInfo .subSwiper{
-  margin-top: 70px;
+  margin-top: 5%;
 }
 .productsInfo .subSwiper .slide{
-  padding: 30px;
+  padding: 2.5%;
   box-sizing: border-box;
 }
 .productsInfo .subSwiper img{
@@ -481,6 +489,20 @@ main > section{
 
 
 /* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  /* 러쉬 제품 소개 */
+  /* .productsInfo__category > figure img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+  }
+  .productsInfo .contentBox{
+    width: calc(100% - 300px);
+  } */
+  .productsInfo .subSwiper .slide{
+    padding: 15px;
+  }
+}
 /* 노트북, 태블릿 가로 기준 */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   /* 메인 배너 */
@@ -516,6 +538,9 @@ main > section{
   .productsInfo .mainSwiper{
     margin: 0 0 0 15%;
   }
+  /* .productsInfo .mainSwiper{
+    margin: 0 0 0 15%;
+  }
   .productsInfo__category > figure img{
     width: 300px;
     height: 450px;
@@ -526,17 +551,293 @@ main > section{
   }
   .productsInfo .subSwiper .slide{
     padding: 15px;
-  }
+  } */
 }
-/* 태블릭 가로 기준 */
+/* 태블릿 가로 기준 */
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  
+  /* 메인 배너 */
+  .banner .videoBox{
+    height: 100vh;
+    padding-bottom: 0;
+  }
+  .banner .videoBox iframe{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 16/9;
+  }
+  .banner .title{
+    font-size: 30px;
+  }
+  .banner .sub-title{
+    font-size: 25px;
+  }
+  .banner .desc{
+    max-width: 510px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  /* 미리보는 러쉬 */
+  .previewLush > .contentBox{
+    gap: 20px;
+  }
+  .previewLush .digitalBadge, 
+  .previewLush .memberGift, 
+  .previewLush .givingPresent{
+    text-align: center;
+  }
+  .previewLush img{
+    width: 180px;
+  }
+  /* 설문조사 */
+  .survey{
+    margin: 0 50px;
+  }
+  .survey > .contentBox{
+    left: 8%;
+  }
+  /* 러쉬 소개 */
+  .lushInfo>.title{
+    margin: 0 0 20px 15%;
+  }
+  .lushInfo .lushInfo__banner{
+    margin: 0 0 0 15%;
+  }
+  .lushInfo figcaption{
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  /* 러쉬 제품 소개 */
+  .productsInfo .mainSwiper{
+    margin: 0 0 0 15%;
+    /* width: 100%; */
+  }
+  /* .productsInfo .contentBox{
+    width: 50%;
+  } */
+  .productsInfo .contentBox .desc{
+    font-size: 25px;
+  }
+  /* 기부와 나눔, 매장 찾기 */
+  .share .desc,
+  .lushShopInfo .desc{
+    font-size: 25px;
+  }
+  .share>img, 
+  .lushShopInfo>img{
+    width: 430px;
+  }
 }
 /* 모바일 가로, 태블릿 세로 기준 */
 @media all and (min-width: 480px) and (max-width: 767px) {
-  
+  /* 메인 배너 */
+  .banner .videoBox{
+    height: 100vh;
+    padding-bottom: 0;
+  }
+  .banner .videoBox iframe{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 16/9;
+  }
+  .banner .contentBox{
+    width: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .banner .title{
+    font-size: 30px;
+  }
+  .banner .sub-title{
+    font-size: 25px;
+  }
+  .banner .desc{
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  /* 미리보는 러쉬 */
+  .previewLush .title{
+    font-size: 18px;
+  }
+  .previewLush > .sub-title{
+    font-size: 25px;
+  }
+  .previewLush > .contentBox{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .previewLush .digitalBadge, 
+  .previewLush .memberGift, 
+  .previewLush .givingPresent{
+    text-align: center;
+  }
+  .previewLush img{
+    width: 180px;
+  }
+  /* 설문조사 */
+  .survey{
+    margin: 0 auto;
+  }
+  .survey > .contentBox{
+    left: 0;
+    padding: 30px;
+  }
+  .survey .desc{
+    font-size: 25px;
+  }
+  /* 러쉬 소개 */
+  .lushInfo>.title{
+    margin: 0 0 20px 15%;
+  }
+  .lushInfo .lushInfo__banner{
+    margin: 0 0 0 15%;
+  }
+  .lushInfo figcaption{
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  /* 러쉬 제품 소개 */
+  .productsInfo .mainSwiper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .productsInfo .contentBox{
+    width: 55%;
+  }
+  .productsInfo__category > figure{
+    width: 100%;
+  }
+  .productsInfo .contentBox .title{
+    padding-left: 5%;
+  }
+  .productsInfo .contentBox .desc{
+    padding-left: 5%;
+    font-size: 1.1rem;
+  }
+  /* 기부와 나눔, 매장 찾기 */
+  .share, 
+  .lushShopInfo{
+    text-align: center;
+    flex-direction: column;
+  }
+  .share>img, 
+  .lushShopInfo>img{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .share .desc,
+  .lushShopInfo .desc{
+    font-size: 25px;
+  }
+  .share .link, .lushShopInfo .link{
+    margin: 0 auto;
+  }
 }
 /* 모바일 세로 기준 */
 @media all and (max-width: 479px) {
-  
+    /* 메인 배너 */
+    .banner .videoBox{
+      height: 100vh;
+      padding-bottom: 0;
+    }
+    .banner .videoBox iframe{
+      width: auto;
+      height: 100%;
+      aspect-ratio: 16/9;
+    }
+    .banner .contentBox{
+      max-width: 380px;
+      left: 0;
+      transform: translateX(0);
+      padding: 5%;
+    }
+    .banner .title{
+      font-size: 30px;
+    }
+    .banner .sub-title{
+      font-size: 25px;
+    }
+    .banner .desc{
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    /* 미리보는 러쉬 */
+    .previewLush .title{
+      font-size: 18px;
+    }
+    .previewLush > .sub-title{
+      font-size: 25px;
+    }
+    .previewLush > .contentBox{
+      flex-direction: column;
+      gap: 50px;
+    }
+    .previewLush .digitalBadge, 
+    .previewLush .memberGift, 
+    .previewLush .givingPresent{
+      text-align: center;
+    }
+    .previewLush img{
+      width: 180px;
+    }
+    /* 설문조사 */
+    .survey{
+      margin: 0 auto;
+    }
+    .survey > .contentBox{
+      left: 0;
+      padding: 5%;
+    }
+    .survey .desc{
+      font-size: 25px;
+    }
+    /* 러쉬 소개 */
+    .lushInfo>.title{
+      margin: 0 0 20px 15%;
+    }
+    .lushInfo .lushInfo__banner{
+      margin: 0 0 0 15%;
+    }
+    .lushInfo figcaption{
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+  /* 러쉬 제품 소개 */
+  .productsInfo .mainSwiper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .productsInfo .contentBox{
+    width: 55%;
+  }
+  .productsInfo__category > figure{
+    width: 100%;
+  }
+  .productsInfo__category > figure img{
+    height: 320px;
+  }
+  .productsInfo .contentBox .title{
+    padding-left: 5%;
+  }
+  .productsInfo .contentBox .desc{
+    padding-left: 5%;
+    font-size: 18px;
+  }
+    /* 기부와 나눔, 매장 찾기 */
+    .share, 
+    .lushShopInfo{
+      text-align: center;
+      flex-direction: column;
+    }
+    .share>img, 
+    .lushShopInfo>img{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .share .desc,
+    .lushShopInfo .desc{
+      font-size: 25px;
+    }
+    .share .link, .lushShopInfo .link{
+      margin: 0 auto;
+    }
 }

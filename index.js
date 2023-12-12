@@ -33,8 +33,22 @@ if($("#mainBannerVideo").length){
 window.addEventListener("DOMContentLoaded", ()=>{
   ////////// 러쉬 소개 스와이퍼 //////////
   const lushInfo_swiper = new Swiper(".lushInfo__banner", {
-    slidesPerView: "auto",
-    spaceBetween: 80,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints:{
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1023: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1440: {
+        slidesPerView: "auto",
+        spaceBetween: 80,
+      }
+    }
   });
 
 
@@ -48,13 +62,21 @@ window.addEventListener("DOMContentLoaded", ()=>{
   $subSwiper.each(function(){
     const autoSwiper= new Swiper(this, {
       // slidesPerView: 'auto',
-      slidesPerView: 3,
+      slidesPerView: 1,
       // slidesPerGroup: 1,
       // loop: true,
       grabCursor: true,
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
+      },
+      breakpoints:{
+        479: {
+          slidesPerView: 2,
+        },
+        767: {
+          slidesPerView: 3,
+        },
       },
       on: {
         // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
