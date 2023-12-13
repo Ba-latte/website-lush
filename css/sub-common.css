@@ -145,9 +145,6 @@ section.contentArea{
   font-size: 2rem;
   line-height: 1.4;
 }
-.contentArea__infoTop .contentBox .title{
-  text-indent: -20px;
-}
 .contentArea article .explanation{
   line-height: 1.4;
 }
@@ -184,6 +181,10 @@ section.contentArea{
 }
 /* 노트북, 태블릿 가로 기준 */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
+  /* 최상단 배너 */
+  .container .subTitle{
+    font-size: 45px;
+  }
   /* 러쉬 소개의 메인 아티클들 */
   .contentArea__infoMain{
     flex-direction: column;
@@ -203,6 +204,10 @@ section.contentArea{
 }
 /* 태블릭 가로 기준 */
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  /* 최상단 배너 */
+  .container .subTitle{
+    font-size: 45px;
+  }
   /* 러쉬 소개의 메인 아티클들 */
   .contentArea__infoMain{
     flex-direction: column;
