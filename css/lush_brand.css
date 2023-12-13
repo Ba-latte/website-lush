@@ -10,6 +10,9 @@ section.contentArea{
   gap: 200px;
   margin-bottom: 200px;
 }
+.contentArea__infoTop .contentBox .title {
+  text-indent: 0;
+}
 .contentArea>article.contentArea__infoMain {
   margin: 0 auto;
   padding: 0;
@@ -22,10 +25,6 @@ section.contentArea{
   width: 704px;
   flex-shrink: 0;
 }
-.contentArea__infoMain>figure{
-  width: 704px;
-  flex-shrink: 0;
-}
 .contentArea__infoMain img{
   width: 100%;
   object-fit: cover;
@@ -35,6 +34,7 @@ section.contentArea{
   font-weight: bold;
   font-size: 2rem;
   line-height: 1;
+  word-break: keep-all;
 }
 .contentArea__infoMain .contentBox span{
   display: inline-block;
@@ -47,4 +47,29 @@ section.contentArea{
 .contentArea__infoMain .explanation {
   margin-top: 16px;
   word-break: keep-all;
+}
+
+/* --------------- 미디어쿼리 --------------- */
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .contentArea__infoMain .title{
+    font-size: 25px;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  .contentArea figure{
+    width: 90%;
+  }
+  .contentArea__infoMain .contentBox{
+    width: auto;
+    padding: 10px;
+  }
 }
