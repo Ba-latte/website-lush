@@ -491,14 +491,6 @@ main > section{
 /* --------------- 미디어쿼리 --------------- */
 @media screen and (max-width: 1500px) {
   /* 러쉬 제품 소개 */
-  /* .productsInfo__category > figure img{
-    width: 300px;
-    height: 450px;
-    object-fit: cover;
-  }
-  .productsInfo .contentBox{
-    width: calc(100% - 300px);
-  } */
   .productsInfo .subSwiper .slide{
     padding: 15px;
   }
@@ -538,20 +530,6 @@ main > section{
   .productsInfo .mainSwiper{
     margin: 0 0 0 15%;
   }
-  /* .productsInfo .mainSwiper{
-    margin: 0 0 0 15%;
-  }
-  .productsInfo__category > figure img{
-    width: 300px;
-    height: 450px;
-    object-fit: cover;
-  }
-  .productsInfo .contentBox{
-    width: calc(100% - 300px);
-  }
-  .productsInfo .subSwiper .slide{
-    padding: 15px;
-  } */
 }
 /* 태블릿 가로 기준 */
 @media all and (min-width: 768px) and (max-width: 1023px) {

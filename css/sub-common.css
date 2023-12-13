@@ -124,7 +124,11 @@ section.container{
     top: 0px;
   }
 }
-
+/* 모바일 사이즈일 경우 */
+.lnb.active.extension.mobile{
+  transform: translateY(110px);
+  transition: transform .3s;
+}
 
 /* 메인 컨텐츠 */
 section.contentArea{
@@ -163,4 +167,142 @@ section.contentArea{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  /* 러쉬 소개의 각 아티클들 */
+  .contentArea>article{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  /* 러쉬 소개의 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    width: 400px;
+  }
+}
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  /* 러쉬 소개의 메인 아티클들 */
+  .contentArea__infoMain{
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* 러쉬 소개의 각 아티클 이미지 */
+  .contentArea figure{
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  /* 러쉬 소개의 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  /* 러쉬 소개의 메인 아티클들 */
+  .contentArea__infoMain{
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* 러쉬 소개의 각 아티클 이미지 */
+  .contentArea figure{
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  /* 러쉬 소개의 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  /* 최상단 배너 */
+  .container>.contentBox{
+    max-width: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container .title{
+    font-size: 20px;
+  }
+  .container .subTitle{
+    font-size: 30px;
+  }
+  .container .desc{
+    word-break: keep-all;
+  }
+  /* 첫번째 아티클 */
+  .contentArea__infoTop{
+    width: 80%;
+  }
+  /* 타이틀 공통 */
+  .contentArea .title{
+    font-size: 25px;
+  }
+  /* 첫번째 아티클 제외한 나머지 아티클 */
+  .contentArea__infoMain{
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* 러쉬 소개의 첫번째 아티클 제외한 나머지 아티클 이미지 */
+  .contentArea figure{
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  /* 러쉬 소개의 첫번째 아티클 제외한 나머지 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  /* 최상단 배너 */
+  .container>.contentBox{
+    /* max-width: 340px; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container .title{
+    word-break: keep-all;
+    font-size: 20px;
+  }
+  .container .subTitle{
+    word-break: keep-all;
+    font-size: 30px;
+  }
+  .container .desc{
+    word-break: keep-all;
+  }
+  /* 첫번째 아티클 */
+  .contentArea__infoTop{
+    width: 80%;
+  }
+  /* 타이틀 공통 */
+  .contentArea .title{
+    font-size: 25px;
+  }
+  /* 첫번째 아티클 제외한 나머지 아티클 */
+  .contentArea__infoMain{
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* 러쉬 소개의 첫번째 아티클 제외한 나머지 아티클 이미지 */
+  .contentArea figure{
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  /* 러쉬 소개의 첫번째 아티클 제외한 나머지 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    margin: 0 auto;
+    text-align: center;
+  }
 }
