@@ -29,6 +29,9 @@ section.contentArea{
   width: 100%;
   object-fit: cover;
 }
+.contentArea__infoMain .contentBox{
+  width: 55%;
+}
 .contentArea__infoMain .title {
   margin-bottom: 0;
   font-weight: bold;
@@ -50,6 +53,18 @@ section.contentArea{
 }
 
 /* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  /* 러쉬 소개의 각 아티클들 */
+  .contentArea>article{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  /* 러쉬 소개의 텍스트박스 */
+  .contentArea__infoMain .contentBox{
+    width: 400px;
+  }
+}
 /* 노트북, 태블릿 가로 기준 */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
 }
