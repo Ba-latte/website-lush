@@ -187,3 +187,91 @@ button[aria-selected="true"]{
 div[role="tabpanel"].active{
   display: block;
 }
+
+/* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  .shopInfo{
+    width: auto;
+  }
+  .swiper.shopInfoBanner{
+    margin-left: 5%;
+  }
+  .accordion{
+    margin-right: 5%;
+  }
+  .accordion .iconAccordion{
+    right: 5.5%;
+  }
+  div[role="tabpanel"]{
+    margin-left: 5%;
+  }
+}
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .shopInfo{
+    position: relative;
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .swiper.shopInfoBanner{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .accordion{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .accordion .iconAccordion{
+    right: 10.5%;
+  }
+  div[role="tabpanel"]{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: initial;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    text-align: center;
+  }
+  div[role="tabpanel"]>img{
+    width: 80%;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  .shopInfo{
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .swiper.shopInfoBanner{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .shopInfoBanner__slide figcaption{
+    font-size: 14px;
+  }
+  .accordion{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .accordion .iconAccordion{
+    right: 10.5%;
+  }
+  div[role="tabpanel"]{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: initial;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    text-align: center;
+  }
+}
