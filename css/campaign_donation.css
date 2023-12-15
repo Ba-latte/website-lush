@@ -60,3 +60,61 @@ section.contentArea{
 .contentArea__link .link:hover::after{
   transform: translateY(-50%) translateX(0);
 }
+
+/* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  section.contentArea{
+    width: auto;
+    gap: 50px;
+  }
+  .contentArea>.contentArea__text{
+    margin: 0;
+    margin-left: 5%;
+  }
+  .contentArea__link{
+    margin-right: 5%;
+  }
+}
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  section.contentArea{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentArea>.contentArea__text{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contentArea__text .quotation{
+    font-size: 20px;
+  }
+  .contentArea__link{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  section.contentArea{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentArea>.contentArea__text{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contentArea__text .quotation{
+    font-size: 20px;
+  }
+  .contentArea__link{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
