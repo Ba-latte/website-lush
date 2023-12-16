@@ -216,3 +216,120 @@ section.precautions{
 .precautions .classification>dd{
   margin-bottom: 30px;
 }
+
+/* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1350px) {
+  .step .sequenceBox{
+    width: auto;
+  }
+  .step img{
+    width: 100%;
+  }
+  .step .sequenceBox>li:not(:last-child)::after{
+    right: -20px;
+  }
+  .goMobile > .contentBox{
+    word-break: keep-all;
+  }
+}
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+/* 태블릿 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  section.spaUseInfo,
+  section.precautions{
+    width: auto;
+    margin: 0 10% 100px;
+  }
+  .goMobile > .contentBox{
+    gap: 30px;
+  }
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  section.spaUseInfo,
+  section.precautions{
+    width: auto;
+    margin: 0 10% 100px;
+  }
+  .spaUseInfo__title{
+    font-size: 25px;
+  }
+  .step .sequenceBox{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .step img{
+    width: 40%;
+  }
+  .step .sequenceBox>li:not(:last-child)::after{
+    top: calc(100% + 20px);
+    right: calc(50% - 20px);
+    transform: translateX(-50%) translateY(0) rotate(90deg);
+  }
+  .precautions .classification{
+    padding: 30px 0 30px;
+  }
+  .goMobile > .contentBox{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .goMobile img{
+    width: 40%;
+    height: auto;
+  }
+  .goMobile .desc{
+    width: max-content;
+    text-align: center;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  section.spaUseInfo,
+  section.precautions{
+    width: auto;
+    margin: 0 10% 100px;
+  }
+  .spaUseInfo__title{
+    font-size: 25px;
+  }
+  .step .title{
+    font-size: 25px;
+  }
+  .step .sequenceBox{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .step img{
+    width: 100%;
+  }
+  .step .sequenceBox>li:not(:last-child)::after{
+    top: calc(100% + 20px);
+    right: calc(50% - 20px);
+    transform: translateX(-50%) translateY(0) rotate(90deg);
+  }
+  .step .sequenceBox p{
+    margin-top: 10px;
+  }
+  .precautions__title{
+    font-size: 25px;
+  }
+  .precautions .classification{
+    padding: 30px 0 30px;
+  }
+  .goMobile > .contentBox{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .goMobile img{
+    width: 40%;
+    height: 40%;
+  }
+  .goMobile .desc{
+    width: max-content;
+    text-align: center;
+    font-size: 25px;
+  }
+}
