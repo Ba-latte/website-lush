@@ -38,6 +38,7 @@ section.container{
 .container .subTitle{
   font-size: 4rem;
   font-weight: bold;
+  line-height: 1.3;
 }
 
 /* LNB 메뉴 */
