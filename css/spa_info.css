@@ -345,3 +345,177 @@ article.branchInfo{
     border-bottom: 1px solid transparent;
   }
 }
+
+
+/* --------------- 미디어쿼리 --------------- */
+@media screen and (max-width: 1500px) {
+  /* 콘텐츠 전체 영역 */
+  section.contentArea{
+    width: auto;
+  }
+  /* 스파 이용방법 안내 배너 */
+  .contentArea .howToUse{
+    max-width: none;
+    width: 85%;
+  }
+  .howToUse > img{
+    left: 10%;
+  }
+  .howToUse > .contentBox{
+    left: calc(10% + 150px);
+  }
+  /* 스파 매장 안내 */
+  article.branchInfo{
+    gap: 50px;
+  }
+}
+/* 노트북, 태블릿 가로 기준 */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+}
+/* 태블릭 가로 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  /* 스파 소개 */
+  .contentArea__intro .wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .contentArea__intro .textBox{
+    width: 85%;
+  }
+  .linkBox{
+    width: 85%;
+  }
+  /* 스파 종류 안내 */
+  .treatment__tablist{
+    width: 33%;
+  }
+  .tabPanelArea{
+    width: 63%;
+  }
+  /* 스파 이용방법 안내 배너 */
+  .howToUse .desc{
+    max-width: 80%;
+    word-break: keep-all;
+  }
+  /* 스파 매장 안내 */
+  article.branchInfo{
+    flex-direction: column-reverse;
+  }
+  .contentArea figure{
+    width: 85%;
+  }
+  .accordion{
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+/* 모바일 가로, 태블릿 세로 기준 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  /* 스파 소개 */
+  .contentArea__intro .wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .contentArea__intro .textBox{
+    width: 85%;
+  }
+  .linkBox{
+    width: 85%;
+  }
+  /* 스파 종류 안내 */
+  .treatmentTab .wrapper{
+    flex-direction: column;
+  }
+  .treatment__tablist{
+    width: 100%;
+  }
+  .tabPanelArea{
+    width: 100%;
+  }
+  div[role="tabpanel"]{
+    border-top: 0;
+  }
+  /* 스파 이용방법 안내 배너 */
+  .contentArea .howToUse{
+    width: auto;
+  }
+  .howToUse > .contentBox{
+    padding: 0 0 0 5%;
+  }
+  .howToUse .desc{
+    max-width: 80%;
+    word-break: keep-all;
+    font-size: 25px;
+  }
+  /* 스파 매장 안내 */
+  article.branchInfo{
+    flex-direction: column-reverse;
+  }
+  .contentArea figure{
+    width: 85%;
+  }
+  .accordion{
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+/* 모바일 세로 기준 */
+@media all and (max-width: 479px) {
+  /* 스파 소개 */
+  .contentArea__intro .wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .contentArea__intro .textBox{
+    width: 85%;
+  }
+  .linkBox{
+    width: 85%;
+  }
+  /* 스파 종류 안내 */
+  .treatmentTab .wrapper{
+    flex-direction: column;
+  }
+  .treatment__tablist{
+    width: 100%;
+  }
+  .tabPanelArea{
+    width: 100%;
+  }
+  div[role="tabpanel"]{
+    border-top: 0;
+  }
+  /* 스파 이용방법 안내 배너 */
+  .contentArea .howToUse{
+    width: auto;
+  }
+  .howToUse > img{
+    width: 25%;
+    height: auto;
+  }
+  .howToUse > .contentBox{
+    padding: 0 0 0 5%;
+    left: 35%;
+  }
+  .howToUse .desc{
+    max-width: 80%;
+    word-break: keep-all;
+  }
+  /* 스파 매장 안내 */
+  article.branchInfo{
+    flex-direction: column-reverse;
+  }
+  .contentArea figure{
+    width: 100%;
+  }
+  .accordion{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
