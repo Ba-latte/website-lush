@@ -148,6 +148,29 @@ buy__button.click(function(){
   return false;
 });
 
+// 스파 안내 페이지의 스파 트리트먼트 종류 탭 클릭 애니메이션
+if($("#spa_treatment_preview").length){
+
+  function handleSizeCheck(){
+    const window_width = $(window).width();
+    
+    if(window_width <= 767){
+      $("button[role='tab']").click(function(){
+        let tabPanelArea_Y = $(".tabPanelArea").offset().top;
+        window.scrollTo({top: tabPanelArea_Y - $(".lnbMenu").height(), left: 0, behavior: "smooth"});
+      });
+    }
+    else{
+      $("button[role='tab']").click(function(){
+        let tabPanelArea_Y = $(".tabPanelArea").offset().top;
+        window.scrollTo({top: tabPanelArea_Y - 135, left: 0, behavior: "smooth"});
+      });
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", handleSizeCheck);
+  window.addEventListener("resize", handleSizeCheck);
+}
 
 // 스파 이용 안내 페이지의 이미지 애니메이션
 let intervalControll = false;
