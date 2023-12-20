@@ -108,6 +108,7 @@
   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/f9cc75c3-f2c4-4b24-b78b-6ea2c495eb82" width="250px" /> -->
 </p>
 작성 예정입니다.
+
 <br /><br />
 <br /><br />
 
@@ -115,7 +116,41 @@
 본 파트의 설명 기준은 데스크탑입니다.   
 
 <br />
-작성 예정입니다.
+### 4-1. 본문으로 바로가기
+<p align="center">
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/a90d94a2-10d2-4e71-93e4-fc9ce4cd07fa" width="830px" />
+</p>
+
+키보드의 tab키 사용시 사이트의 첫 화면에서 메뉴를 통과하지 않고도 바로 본문으로 이동 가능하도록 "본문으로 바로가기" 메뉴를 만들었습니다.   
+평상시에는 보이지 않게 숨겨져있다가 tab키를 사용하면 화면의 최상단에 메뉴가 등장합니다.   
+enter키를 누르면 아래의 본문으로 바로 이동됩니다.   
+
+<br />
+### 4-2. 퀵메뉴 포커스 라인 색상 변경
+<p align="center">
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/41abbca5-0fda-4df8-bf14-a3487cb95b41" />
+</p>
+
+퀵메뉴의 버튼 배경색이 검정색에 가까워서 포커스가 가면 기존의 라인 색상은 구분이 되지 않았습니다.   
+그래서 퀵 메뉴로 tab키 이동하여 포커스가 갈 경우 색상을 빨간색으로 하여 지금 포커스가 간 메뉴를 구분하기 쉽도록 만들었습니다.   
+
+<br />
+
+### 4-3. 탭과 아코디언 패턴을 결합한 UI
+<p align="center">
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/fd7bc8b4-a91a-43e7-bf03-656a87b6f2b5" width="830px" />
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/c7ec8d18-742e-4da7-b647-0656afab1dc3" width="830px" />
+</p>
+
+2개의 단으로 나누어, 왼쪽 단에는 탭 패널을 배치할 공간을 만들어 두고 오른쪽 단에는 탭 리스트를 담은 아코디언 패널과 아코디언 패널의 트리거를 배치하였습니다.   
+권역별로 나뉜 아코디언 트리거를 클릭하면 해당 권역에 있는 지점 이름으로 만들어진 탭 리스트가 등장합니다.   
+탭 리스트를 클릭하면 왼쪽 단에 클릭된 탭의 패널 정보가 보여집니다.   
+
+아코디언 트리거와 탭 리스트 모두 키보드의 tab 키로 이동 가능하며 활성화/비활성화는 enter키로 가능합니다.   
+또한 아코디언 패널이 비활성화 되어있을 경우에는 탭 리스트에 tab키로도 접근 불가하도록 만들었습니다.   
+(아코디언 패널이 활성화되었을 때에만 접근 가능합니다.)   
+
+<br />
 
 <br /><br />
 <br /><br />
