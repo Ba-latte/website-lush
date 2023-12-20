@@ -116,6 +116,7 @@
 본 파트의 설명 기준은 데스크탑입니다.   
 
 <br />
+
 ### 4-1. 본문으로 바로가기
 <p align="center">
   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/a90d94a2-10d2-4e71-93e4-fc9ce4cd07fa" width="830px" />
@@ -126,6 +127,7 @@
 enter키를 누르면 아래의 본문으로 바로 이동됩니다.   
 
 <br />
+
 ### 4-2. 퀵메뉴 포커스 라인 색상 변경
 <p align="center">
   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/41abbca5-0fda-4df8-bf14-a3487cb95b41" />
