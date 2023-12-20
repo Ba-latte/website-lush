@@ -138,7 +138,21 @@ enter키를 누르면 아래의 본문으로 바로 이동됩니다.
 
 <br />
 
-### 4-3. 탭과 아코디언 패턴을 결합한 UI
+### 4-3. 무한 롤링 배너
+<p align="center">
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/72aea308-4d89-4c4d-9bd5-dc5f4f6a172a" width="830px" />
+  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/ccd04ede-d20c-440a-bb37-e50de5985331" width="830px" />
+</p>
+
+기존의 원본 사이트에서는 각 심볼에 마우스 오버하면 배경이미지가 바뀌고 다른 심볼의 배경색이 투명해졌습니다.   
+이 심볼들은 러쉬의 이념과 러쉬가 지향하는 가치를 나타냅니다.   
+이와 관련된 내용은 "러쉬 소개" 메뉴에서 여러 서브 페이지에 걸쳐 보여주고 있으므로, 메인 페이지에서는 깔끔하게 보여주면서도 동적인 느낌을 가미하고 싶었습니다.   
+그래서 끝없이 흐르는 롤링 배너로 디자인을 바꾸어 구현하였습니다.   
+6개의 심볼을 하나의 세트로 만들고 이를 복사하여 여러 개로 늘린 후 첫번째 세트가 화면 밖으로 나가면 마지막 세트의 뒤로 이어 붙여서 끝없이 재생되는 것처럼 구현했습니다.   
+
+<br />
+
+### 4-4. 탭과 아코디언 패턴을 결합한 UI
 <p align="center">
   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/fd7bc8b4-a91a-43e7-bf03-656a87b6f2b5" width="830px" />
   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/c7ec8d18-742e-4da7-b647-0656afab1dc3" width="830px" />
