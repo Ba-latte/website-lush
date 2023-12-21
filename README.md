@@ -94,20 +94,10 @@
 
 <br />
 
-### 3-2. 사이트 구조
+### 3-2. 메뉴 구조
 <p align="center">
-<!--   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/759a55f1-258a-41d3-adc6-31eeb4181e70" width="830px" /> -->
+  <img src="https://github.com/Ba-latte/website-lush/assets/118030935/c7daa851-d287-4ca0-89b9-0a43180031bc" width="830px" />
 </p>
-작성 예정입니다.
-<br />
-
-### 3-3. 각 페이지별 구조
-<p align="center">
-<!--   <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/db7c0af3-1854-4ca9-886e-c50b971a1448" width="250px" />
-  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/c4448bef-d82c-4728-84c8-e6afa32f4371" width="250px" />
-  <img src="https://github.com/Ba-latte/citadellegin-app/assets/118030935/f9cc75c3-f2c4-4b24-b78b-6ea2c495eb82" width="250px" /> -->
-</p>
-작성 예정입니다.
 
 <br /><br />
 <br /><br />
